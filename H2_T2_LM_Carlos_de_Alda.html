@@ -1,0 +1,2332 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html>
+  <head>
+    <title>Lista de Pedidos, Clientes, Facturas y Productos Vendidos</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .most-sold-header {
+        margin-top: 20px;
+      }
+      .most-sold-header h2 {
+        margin-bottom: 5px;
+      }
+      .most-sold-products {
+        margin-top: 10px;
+      }
+      /* Estilos para las facturas */
+      .invoice-card {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 50%;
+      }
+      .invoice-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      .invoice-card h3 {
+        margin-top: 0;
+        color: #333;
+        font-size: 20px;
+      }
+      .invoice-details, .invoice-products {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #555;
+      }
+      .invoice-products {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lista de Pedidos</h2>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Teléfono</th>
+        <th>Dirección</th>
+        <th>Correo</th>
+        <th>Fecha de Compra</th>
+        <th>Fecha de Entrega</th>
+        <th>Total de la Factura</th>
+        <th>Productos</th>
+      </tr>
+      <tr>
+        <td>María</td>
+        <td>González Martínez</td>
+        <td>654987321</td>
+        <td>Calle Gran Vía, 789, Barcelona, Barcelona 08003</td>
+        <td>maria@example.com</td>
+        <td>2021-01-03</td>
+        <td>2021-01-13</td>
+        <td>90.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Chaqueta de Cuero Zara</li>
+            <li>Pantalón Vaquero Stradivarius</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>José</td>
+        <td>Ruiz Sánchez</td>
+        <td>678123789</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28004</td>
+        <td>jose@example.com</td>
+        <td>2021-01-06</td>
+        <td>2021-01-16</td>
+        <td>200.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Zapatillas Adidas Superstar</li>
+            <li>Jersey HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Andrea</td>
+        <td>Fernández Gutiérrez</td>
+        <td>654789123</td>
+        <td>Calle Sevilla, 456, Valencia, Valencia 46002</td>
+        <td>andrea@example.com</td>
+        <td>2021-01-10</td>
+        <td>2021-01-20</td>
+        <td>80.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta Manga Corta PullandBear</li>
+            <li>Short Deportivo Nike</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>Rodríguez Martínez</td>
+        <td>678321654</td>
+        <td>Calle Granada, 789, Sevilla, Sevilla 41002</td>
+        <td>laura@example.com</td>
+        <td>2021-01-12</td>
+        <td>2021-01-22</td>
+        <td>150.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Botas Timberland</li>
+            <li>Bufanda Mango</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Pedro</td>
+        <td>Martínez Sánchez</td>
+        <td>987321654</td>
+        <td>Calle Mayor, 123, Barcelona, Barcelona 08001</td>
+        <td>pedro@example.com</td>
+        <td>2021-01-15</td>
+        <td>2021-01-25</td>
+        <td>95.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Sudadera GAP</li>
+            <li>Gorra New Era</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>López García</td>
+        <td>654321789</td>
+        <td>Calle Sevilla, 123, Madrid, Madrid 28005</td>
+        <td>ana@example.com</td>
+        <td>2021-01-18</td>
+        <td>2021-01-28</td>
+        <td>130.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Jersey Massimo Dutti</li>
+            <li>Jeans Levi's</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>Pérez Rodríguez</td>
+        <td>321987654</td>
+        <td>Calle Alameda, 456, Valencia, Valencia 46003</td>
+        <td>david@example.com</td>
+        <td>2021-01-20</td>
+        <td>2021-01-30</td>
+        <td>70.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta Vans</li>
+            <li>Calcetines HUF</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Isabel</td>
+        <td>Martínez Pérez</td>
+        <td>321654987</td>
+        <td>Calle Granada, 123, Madrid, Madrid 28006</td>
+        <td>isabel@example.com</td>
+        <td>2021-01-22</td>
+        <td>2021-02-01</td>
+        <td>100.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Chaqueta Helly Hansen</li>
+            <li>Bufanda Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Miguel</td>
+        <td>García Gómez</td>
+        <td>321456987</td>
+        <td>Calle Alameda, 789, Barcelona, Barcelona 08005</td>
+        <td>miguel@example.com</td>
+        <td>2021-01-25</td>
+        <td>2021-02-05</td>
+        <td>120.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Sudadera Nike</li>
+            <li>Pantalón Chino Dockers</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Luisa</td>
+        <td>Rodríguez López</td>
+        <td>987654321</td>
+        <td>Calle Gran Vía, 456, Madrid, Madrid 28007</td>
+        <td>luisa@example.com</td>
+        <td>2021-01-28</td>
+        <td>2021-02-08</td>
+        <td>85.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Zapatillas Converse</li>
+            <li>Camiseta Bershka</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Martínez López</td>
+        <td>654987321</td>
+        <td>Calle Gran Vía, 789, Madrid, Madrid 28004</td>
+        <td>carlos@example.com</td>
+        <td>2021-04-03</td>
+        <td>2021-04-13</td>
+        <td>120.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camisa Ralph Lauren</li>
+            <li>Short Adidas</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Sofía</td>
+        <td>García Martínez</td>
+        <td>678123789</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08002</td>
+        <td>sofia@example.com</td>
+        <td>2021-04-06</td>
+        <td>2021-04-16</td>
+        <td>70.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Sandalias Birkenstock</li>
+            <li>Bufanda PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Luis</td>
+        <td>Ruiz Gómez</td>
+        <td>654789123</td>
+        <td>Calle Sevilla, 123, Sevilla, Sevilla 41003</td>
+        <td>luis@example.com</td>
+        <td>2021-04-10</td>
+        <td>2021-04-20</td>
+        <td>95.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Pantalón Corto HyM</li>
+            <li>Camiseta Manga Larga Uniqlo</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Lucía</td>
+        <td>Pérez Rodríguez</td>
+        <td>678321654</td>
+        <td>Calle Alameda, 789, Valencia, Valencia 46004</td>
+        <td>lucia@example.com</td>
+        <td>2021-04-15</td>
+        <td>2021-04-25</td>
+        <td>100.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camisa Zara</li>
+            <li>Pañuelo Desigual</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Javier</td>
+        <td>Fernández Pérez</td>
+        <td>987654321</td>
+        <td>Calle Granada, 456, Granada, Granada 18001</td>
+        <td>javier@example.com</td>
+        <td>2021-04-20</td>
+        <td>2021-04-30</td>
+        <td>85.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Zapatos Clarks</li>
+            <li>Jersey Mango</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>Gómez Martínez</td>
+        <td>987321654</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28005</td>
+        <td>marta@example.com</td>
+        <td>2021-04-25</td>
+        <td>2021-05-05</td>
+        <td>130.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Blusa Stradivarius</li>
+            <li>Pantalón Vaquero PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>María</td>
+        <td>Rodríguez Gómez</td>
+        <td>654789321</td>
+        <td>Calle Gran Vía, 789, Barcelona, Barcelona 08003</td>
+        <td>maria@example.com</td>
+        <td>2021-04-30</td>
+        <td>2021-05-10</td>
+        <td>70.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta Polo Ralph Lauren</li>
+            <li>Gorra Nike</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Jorge</td>
+        <td>López Martínez</td>
+        <td>321654987</td>
+        <td>Calle Sevilla, 456, Sevilla, Sevilla 41004</td>
+        <td>jorge@example.com</td>
+        <td>2021-05-05</td>
+        <td>2021-05-15</td>
+        <td>90.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Short Puma</li>
+            <li>Camiseta PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>Fernández García</td>
+        <td>987321654</td>
+        <td>Calle Alameda, 789, Valencia, Valencia 46005</td>
+        <td>ana@example.com</td>
+        <td>2021-05-10</td>
+        <td>2021-05-20</td>
+        <td>80.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Falda Zara</li>
+            <li>Cinturón HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>Pérez González</td>
+        <td>654321987</td>
+        <td>Calle Granada, 456, Granada, Granada 18002</td>
+        <td>david@example.com</td>
+        <td>2021-05-15</td>
+        <td>2021-05-25</td>
+        <td>110.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Chaqueta Tommy Hilfiger</li>
+            <li>Bufanda Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>González Martínez</td>
+        <td>654987321</td>
+        <td>Calle Gran Vía, 789, Madrid, Madrid 28004</td>
+        <td>laura@example.com</td>
+        <td>2021-07-03</td>
+        <td>2021-07-13</td>
+        <td>140.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Vestido Zara</li>
+            <li>Sombrero HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Pablo</td>
+        <td>Ruiz Gómez</td>
+        <td>678123789</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08002</td>
+        <td>pablo@example.com</td>
+        <td>2021-07-06</td>
+        <td>2021-07-16</td>
+        <td>75.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta Mango</li>
+            <li>Gafas de Sol Ray-Ban</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>López Rodríguez</td>
+        <td>654789123</td>
+        <td>Calle Sevilla, 123, Sevilla, Sevilla 41003</td>
+        <td>marta@example.com</td>
+        <td>2021-07-10</td>
+        <td>2021-07-20</td>
+        <td>85.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Chaqueta HyM</li>
+            <li>Falda Mango</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Lucas</td>
+        <td>Pérez López</td>
+        <td>678321654</td>
+        <td>Calle Alameda, 789, Valencia, Valencia 46004</td>
+        <td>lucas@example.com</td>
+        <td>2021-07-15</td>
+        <td>2021-07-25</td>
+        <td>95.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Zapatos Timberland</li>
+            <li>Pañuelo Desigual</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Sara</td>
+        <td>Gómez Fernández</td>
+        <td>678987123</td>
+        <td>Calle Granada, 456, Granada, Granada 18003</td>
+        <td>sara@example.com</td>
+        <td>2021-07-20</td>
+        <td>2021-07-30</td>
+        <td>120.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Chaqueta Mango</li>
+            <li>Bufanda HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Fernández Ruiz</td>
+        <td>321987654</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28006</td>
+        <td>carlos@example.com</td>
+        <td>2021-07-25</td>
+        <td>2021-08-04</td>
+        <td>65.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta PullandBear</li>
+            <li>Gorra Adidas</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Elena</td>
+        <td>Pérez Martínez</td>
+        <td>321654987</td>
+        <td>Calle Sevilla, 456, Sevilla, Sevilla 41005</td>
+        <td>elena@example.com</td>
+        <td>2021-07-30</td>
+        <td>2021-08-09</td>
+        <td>110.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Pantalón Zara</li>
+            <li>Sombrero PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Adrián</td>
+        <td>Rodríguez López</td>
+        <td>789123654</td>
+        <td>Calle Gran Vía, 123, Barcelona, Barcelona 08004</td>
+        <td>adrian@example.com</td>
+        <td>2021-08-05</td>
+        <td>2021-08-15</td>
+        <td>95.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Zapatos HyM</li>
+            <li>Gorra PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>María</td>
+        <td>Gómez Ruiz</td>
+        <td>789654321</td>
+        <td>Calle Alameda, 456, Valencia, Valencia 46005</td>
+        <td>maria@example.com</td>
+        <td>2021-08-10</td>
+        <td>2021-08-20</td>
+        <td>120.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Chaqueta Pulland Bear</li>
+            <li>Bufanda Mango</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Javier</td>
+        <td>Ruiz González</td>
+        <td>987654321</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28008</td>
+        <td>javier@example.com</td>
+        <td>2021-08-15</td>
+        <td>2021-08-25</td>
+        <td>65.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta Zara</li>
+            <li>Gafas de Sol HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>García Martínez</td>
+        <td>654123987</td>
+        <td>Calle Gran Vía, 123, Madrid, Madrid 28009</td>
+        <td>ana@example.com</td>
+        <td>2021-10-01</td>
+        <td>2021-10-11</td>
+        <td>80.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Jersey Mango</li>
+            <li>Bufanda Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Miguel</td>
+        <td>López García</td>
+        <td>987321654</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28010</td>
+        <td>miguel@example.com</td>
+        <td>2021-10-06</td>
+        <td>2021-10-16</td>
+        <td>110.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Botines Timberland</li>
+            <li>Pañuelo Mango</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Lucía</td>
+        <td>Ruiz Martínez</td>
+        <td>321654987</td>
+        <td>Calle Granada, 456, Granada, Granada 18004</td>
+        <td>lucia@example.com</td>
+        <td>2021-10-11</td>
+        <td>2021-10-21</td>
+        <td>70.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Sudadera PullandBear</li>
+            <li>Guantes HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Diego</td>
+        <td>Pérez Fernández</td>
+        <td>321987654</td>
+        <td>Calle Alameda, 789, Valencia, Valencia 46006</td>
+        <td>diego@example.com</td>
+        <td>2021-10-16</td>
+        <td>2021-10-26</td>
+        <td>95.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camisa Zara</li>
+            <li>Corbata HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>Gómez Sánchez</td>
+        <td>987654321</td>
+        <td>Calle Sevilla, 789, Sevilla, Sevilla 41006</td>
+        <td>laura@example.com</td>
+        <td>2021-10-21</td>
+        <td>2021-10-31</td>
+        <td>100.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta Mango</li>
+            <li>Pañuelo PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Pablo</td>
+        <td>Rodríguez Gómez</td>
+        <td>654789321</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08005</td>
+        <td>pablo@example.com</td>
+        <td>2021-10-26</td>
+        <td>2021-11-05</td>
+        <td>85.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Jersey PullandBear</li>
+            <li>Gorro Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Sofía</td>
+        <td>Fernández López</td>
+        <td>789321654</td>
+        <td>Calle Gran Vía, 456, Madrid, Madrid 28011</td>
+        <td>sofia@example.com</td>
+        <td>2021-11-01</td>
+        <td>2021-11-11</td>
+        <td>75.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Sudadera Zara</li>
+            <li>Bufanda PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Daniel</td>
+        <td>García Sánchez</td>
+        <td>654987321</td>
+        <td>Calle Mayor, 789, Barcelona, Barcelona 08006</td>
+        <td>daniel@example.com</td>
+        <td>2021-11-06</td>
+        <td>2021-11-16</td>
+        <td>120.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Botas Mango</li>
+            <li>Gorro PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>González Martínez</td>
+        <td>321987654</td>
+        <td>Calle Granada, 789, Granada, Granada 18005</td>
+        <td>marta@example.com</td>
+        <td>2021-11-11</td>
+        <td>2021-11-21</td>
+        <td>90.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Pantalón PullandBear</li>
+            <li>Calcetines HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Ruiz Fernández</td>
+        <td>987321654</td>
+        <td>Calle Mayor, 123, Madrid, Madrid 28012</td>
+        <td>carlos@example.com</td>
+        <td>2021-11-16</td>
+        <td>2021-11-26</td>
+        <td>105.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camisa Mango</li>
+            <li>Pañuelo Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>María</td>
+        <td>Rodríguez Gómez</td>
+        <td>654789321</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08001</td>
+        <td>maria@example.com</td>
+        <td>2022-01-10</td>
+        <td>2022-01-20</td>
+        <td>120.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta Zara</li>
+            <li>Pañuelo Mango</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>Fernández López</td>
+        <td>987321654</td>
+        <td>Calle Gran Vía, 789, Madrid, Madrid 28002</td>
+        <td>david@example.com</td>
+        <td>2022-01-15</td>
+        <td>2022-01-25</td>
+        <td>80.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Sudadera PullandBear</li>
+            <li>Bufanda HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Sara</td>
+        <td>González Martínez</td>
+        <td>321987654</td>
+        <td>Calle Granada, 456, Granada, Granada 18006</td>
+        <td>sara@example.com</td>
+        <td>2022-01-20</td>
+        <td>2022-01-30</td>
+        <td>100.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Zapatos Mango</li>
+            <li>Gorro PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Javier</td>
+        <td>Ruiz Fernández</td>
+        <td>654987321</td>
+        <td>Calle Mayor, 789, Barcelona, Barcelona 08003</td>
+        <td>javier@example.com</td>
+        <td>2022-01-25</td>
+        <td>2022-02-04</td>
+        <td>90.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Jersey Zara</li>
+            <li>Calcetines HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Lucía</td>
+        <td>García Pérez</td>
+        <td>123456789</td>
+        <td>Calle Sevilla, 123, Sevilla, Sevilla 41001</td>
+        <td>lucia@example.com</td>
+        <td>2022-01-30</td>
+        <td>2022-02-09</td>
+        <td>110.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camisa Mango</li>
+            <li>Bufanda Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Rodríguez Sánchez</td>
+        <td>987654321</td>
+        <td>Calle Gran Vía, 456, Madrid, Madrid 28004</td>
+        <td>carlos@example.com</td>
+        <td>2022-02-05</td>
+        <td>2022-02-15</td>
+        <td>95.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Pantalón Zara</li>
+            <li>Corbata HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Elena</td>
+        <td>Fernández Gómez</td>
+        <td>654321987</td>
+        <td>Calle Mayor, 789, Barcelona, Barcelona 08005</td>
+        <td>elena@example.com</td>
+        <td>2022-02-10</td>
+        <td>2022-02-20</td>
+        <td>85.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Zapatillas Mango</li>
+            <li>Gorro PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Andrea</td>
+        <td>Gómez Martínez</td>
+        <td>321654987</td>
+        <td>Calle Sevilla, 456, Sevilla, Sevilla 41002</td>
+        <td>andrea@example.com</td>
+        <td>2022-02-15</td>
+        <td>2022-02-25</td>
+        <td>130.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Abrigo Zara</li>
+            <li>Guantes HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Pablo</td>
+        <td>Sanchez Gómez</td>
+        <td>987654123</td>
+        <td>Calle Granada, 789, Granada, Granada 18007</td>
+        <td>pablo@example.com</td>
+        <td>2022-02-20</td>
+        <td>2022-03-02</td>
+        <td>95.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Sudadera Mango</li>
+            <li>Bufanda PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>García López</td>
+        <td>456789123</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08006</td>
+        <td>laura@example.com</td>
+        <td>2022-02-25</td>
+        <td>2022-03-07</td>
+        <td>110.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Zapatos PullandBear</li>
+            <li>Corbata Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>González Martínez</td>
+        <td>654123789</td>
+        <td>Calle Mayor, 456, Madrid, Madrid 28003</td>
+        <td>marta@example.com</td>
+        <td>2022-04-10</td>
+        <td>2022-04-20</td>
+        <td>150.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camisa Mango</li>
+            <li>Pantalón Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Luis</td>
+        <td>Rodríguez Sánchez</td>
+        <td>987789456</td>
+        <td>Calle Gran Vía, 789, Barcelona, Barcelona 08007</td>
+        <td>luis@example.com</td>
+        <td>2022-04-15</td>
+        <td>2022-04-25</td>
+        <td>80.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Sudadera PullandBear</li>
+            <li>Bufanda HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>Gómez Martín</td>
+        <td>321654987</td>
+        <td>Calle Granada, 456, Granada, Granada 18008</td>
+        <td>ana@example.com</td>
+        <td>2022-04-20</td>
+        <td>2022-04-30</td>
+        <td>100.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Zapatos Mango</li>
+            <li>Gorro PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Mario</td>
+        <td>García Pérez</td>
+        <td>123789456</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28004</td>
+        <td>mario@example.com</td>
+        <td>2022-04-25</td>
+        <td>2022-05-05</td>
+        <td>120.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Jersey HyM</li>
+            <li>Bufanda Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Elena</td>
+        <td>Sanchez López</td>
+        <td>789456123</td>
+        <td>Calle Sevilla, 123, Sevilla, Sevilla 41003</td>
+        <td>elena@example.com</td>
+        <td>2022-04-30</td>
+        <td>2022-05-10</td>
+        <td>70.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta Zara</li>
+            <li>Calcetines HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Andrés</td>
+        <td>González Martínez</td>
+        <td>654123789</td>
+        <td>Calle Mayor, 456, Madrid, Madrid 28005</td>
+        <td>andres@example.com</td>
+        <td>2022-05-05</td>
+        <td>2022-05-15</td>
+        <td>90.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Pantalón PullandBear</li>
+            <li>Corbata HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Julia</td>
+        <td>Rodríguez Gómez</td>
+        <td>987789456</td>
+        <td>Calle Gran Vía, 789, Barcelona, Barcelona 08008</td>
+        <td>julia@example.com</td>
+        <td>2022-05-10</td>
+        <td>2022-05-20</td>
+        <td>85.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Abrigo Mango</li>
+            <li>Guantes PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Diego</td>
+        <td>Fernández López</td>
+        <td>321654987</td>
+        <td>Calle Granada, 456, Granada, Granada 18009</td>
+        <td>diego@example.com</td>
+        <td>2022-05-15</td>
+        <td>2022-05-25</td>
+        <td>110.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Jersey Zara</li>
+            <li>Bufanda Mango</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Lorena</td>
+        <td>Martínez García</td>
+        <td>123789456</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28006</td>
+        <td>lorena@example.com</td>
+        <td>2022-05-20</td>
+        <td>2022-05-30</td>
+        <td>75.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camisa PullandBear</li>
+            <li>Pañuelo Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Gómez Sánchez</td>
+        <td>789456123</td>
+        <td>Calle Sevilla, 123, Sevilla, Sevilla 41004</td>
+        <td>carlos@example.com</td>
+        <td>2022-05-25</td>
+        <td>2022-06-05</td>
+        <td>100.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Pantalón HyM</li>
+            <li>Gorra PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>Fernández Gutiérrez</td>
+        <td>654987321</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28007</td>
+        <td>laura@example.com</td>
+        <td>2022-07-10</td>
+        <td>2022-07-20</td>
+        <td>120.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Sudadera HyM</li>
+            <li>Pañuelo Mango</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Roberto</td>
+        <td>Ruiz Martínez</td>
+        <td>987654321</td>
+        <td>Calle Gran Vía, 456, Barcelona, Barcelona 08009</td>
+        <td>roberto@example.com</td>
+        <td>2022-07-15</td>
+        <td>2022-07-25</td>
+        <td>90.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta Mango</li>
+            <li>Bufanda PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Carmen</td>
+        <td>López Sánchez</td>
+        <td>789321654</td>
+        <td>Calle Granada, 123, Granada, Granada 18010</td>
+        <td>carmen@example.com</td>
+        <td>2022-07-20</td>
+        <td>2022-07-30</td>
+        <td>140.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Chaqueta Zara</li>
+            <li>Gorro PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Javier</td>
+        <td>Martínez Gómez</td>
+        <td>321789654</td>
+        <td>Calle Mayor, 123, Madrid, Madrid 28008</td>
+        <td>javier@example.com</td>
+        <td>2022-07-25</td>
+        <td>2022-08-05</td>
+        <td>80.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camisa PullandBear</li>
+            <li>Gafas de sol HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>María</td>
+        <td>García Rodríguez</td>
+        <td>987321654</td>
+        <td>Calle Sevilla, 456, Sevilla, Sevilla 41005</td>
+        <td>maria@example.com</td>
+        <td>2022-07-30</td>
+        <td>2022-08-10</td>
+        <td>100.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Pantalón Mango</li>
+            <li>Sombrero PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Manuel</td>
+        <td>Ramírez López</td>
+        <td>789654123</td>
+        <td>Calle Gran Vía, 789, Barcelona, Barcelona 08010</td>
+        <td>manuel@example.com</td>
+        <td>2022-08-05</td>
+        <td>2022-08-15</td>
+        <td>95.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Chaqueta HyM</li>
+            <li>Bufanda Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Sara</td>
+        <td>Fernández Rodríguez</td>
+        <td>456987321</td>
+        <td>Calle Mayor, 456, Madrid, Madrid 28009</td>
+        <td>sara@example.com</td>
+        <td>2022-08-10</td>
+        <td>2022-08-20</td>
+        <td>85.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Jersey PullandBear</li>
+            <li>Gorra HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>López Martínez</td>
+        <td>789654321</td>
+        <td>Calle Granada, 789, Granada, Granada 18011</td>
+        <td>marta@example.com</td>
+        <td>2022-08-15</td>
+        <td>2022-08-25</td>
+        <td>110.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camisa Mango</li>
+            <li>Bufanda PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Diego</td>
+        <td>Gómez Rodríguez</td>
+        <td>321456987</td>
+        <td>Calle Sevilla, 789, Sevilla, Sevilla 41006</td>
+        <td>diego@example.com</td>
+        <td>2022-08-20</td>
+        <td>2022-08-30</td>
+        <td>75.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Pantalón Zara</li>
+            <li>Gorra Mango</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Lucía</td>
+        <td>García Sánchez</td>
+        <td>987456321</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28010</td>
+        <td>lucia@example.com</td>
+        <td>2022-08-25</td>
+        <td>2022-09-05</td>
+        <td>95.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Sudadera PullandBear</li>
+            <li>Pañuelo HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>López Martínez</td>
+        <td>789654321</td>
+        <td>Calle Granada, 789, Granada, Granada 18011</td>
+        <td>marta@example.com</td>
+        <td>2022-10-10</td>
+        <td>2022-10-20</td>
+        <td>110.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camisa Mango</li>
+            <li>Bufanda PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Diego</td>
+        <td>Gómez Rodríguez</td>
+        <td>321456987</td>
+        <td>Calle Sevilla, 789, Sevilla, Sevilla 41006</td>
+        <td>diego@example.com</td>
+        <td>2022-10-15</td>
+        <td>2022-10-25</td>
+        <td>75.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Pantalón Zara</li>
+            <li>Gorra Mango</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Lucía</td>
+        <td>García Sánchez</td>
+        <td>987456321</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28010</td>
+        <td>lucia@example.com</td>
+        <td>2022-10-20</td>
+        <td>2022-10-30</td>
+        <td>95.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Sudadera PullandBear</li>
+            <li>Pañuelo HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Martínez García</td>
+        <td>654123789</td>
+        <td>Calle Gran Vía, 456, Barcelona, Barcelona 08020</td>
+        <td>carlos@example.com</td>
+        <td>2022-10-25</td>
+        <td>2022-11-05</td>
+        <td>120.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Chaqueta Zara</li>
+            <li>Gorra PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>Gómez Martínez</td>
+        <td>147258369</td>
+        <td>Calle Mayor, 123, Madrid, Madrid 28005</td>
+        <td>ana@example.com</td>
+        <td>2022-10-30</td>
+        <td>2022-11-10</td>
+        <td>85.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Jersey Mango</li>
+            <li>Gafas de sol HyM</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Javier</td>
+        <td>González Rodríguez</td>
+        <td>369852147</td>
+        <td>Calle Serrano, 456, Madrid, Madrid 28006</td>
+        <td>javier@example.com</td>
+        <td>2022-11-05</td>
+        <td>2022-11-15</td>
+        <td>105.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta PullandBear</li>
+            <li>Bufanda Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Elena</td>
+        <td>Sanchez López</td>
+        <td>258369147</td>
+        <td>Calle Alcalá, 789, Madrid, Madrid 28007</td>
+        <td>elena@example.com</td>
+        <td>2022-11-10</td>
+        <td>2022-11-20</td>
+        <td>90.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camisa HyM</li>
+            <li>Gorra PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Sara</td>
+        <td>Ruiz García</td>
+        <td>369147258</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08030</td>
+        <td>sara@example.com</td>
+        <td>2022-11-15</td>
+        <td>2022-11-25</td>
+        <td>80.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Pantalón Zara</li>
+            <li>Bufanda Mango</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Adrián</td>
+        <td>López Sánchez</td>
+        <td>852369147</td>
+        <td>Calle Gran Vía, 123, Barcelona, Barcelona 08040</td>
+        <td>adrian@example.com</td>
+        <td>2022-11-20</td>
+        <td>2022-11-30</td>
+        <td>70.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Jersey PullandBear</li>
+            <li>Gorra Zara</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>Fernández Martínez</td>
+        <td>147852369</td>
+        <td>Calle Serrano, 789, Madrid, Madrid 28008</td>
+        <td>laura@example.com</td>
+        <td>2022-11-25</td>
+        <td>2022-12-05</td>
+        <td>100.00</td>
+        <td>
+          <ul class="product-list">
+            <li>Camiseta HyM</li>
+            <li>Bufanda PullandBear</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <h2>Lista de Clientes</h2>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Teléfono</th>
+        <th>Dirección</th>
+        <th>Correo</th>
+        <th>Fecha de Inclusión</th>
+      </tr>
+      <tr>
+        <td>María</td>
+        <td>González Martínez</td>
+        <td>654987321</td>
+        <td>Calle Gran Vía, 789, Barcelona, Barcelona 08003</td>
+        <td>maria@example.com</td>
+        <td>2020-12-05</td>
+      </tr>
+      <tr>
+        <td>José</td>
+        <td>Ruiz Sánchez</td>
+        <td>678123789</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28004</td>
+        <td>jose@example.com</td>
+        <td>2020-11-25</td>
+      </tr>
+      <tr>
+        <td>Andrea</td>
+        <td>Fernández Gutiérrez</td>
+        <td>654789123</td>
+        <td>Calle Sevilla, 456, Valencia, Valencia 46002</td>
+        <td>andrea@example.com</td>
+        <td>2020-12-15</td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>Rodríguez Martínez</td>
+        <td>678321654</td>
+        <td>Calle Granada, 789, Sevilla, Sevilla 41002</td>
+        <td>laura@example.com</td>
+        <td>2020-11-30</td>
+      </tr>
+      <tr>
+        <td>Pedro</td>
+        <td>Martínez Sánchez</td>
+        <td>987321654</td>
+        <td>Calle Mayor, 123, Barcelona, Barcelona 08001</td>
+        <td>pedro@example.com</td>
+        <td>2020-12-20</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>López García</td>
+        <td>654321789</td>
+        <td>Calle Sevilla, 123, Madrid, Madrid 28005</td>
+        <td>ana@example.com</td>
+        <td>2020-11-15</td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>Pérez Rodríguez</td>
+        <td>321987654</td>
+        <td>Calle Alameda, 456, Valencia, Valencia 46003</td>
+        <td>david@example.com</td>
+        <td>2020-12-01</td>
+      </tr>
+      <tr>
+        <td>Isabel</td>
+        <td>Martínez Pérez</td>
+        <td>321654987</td>
+        <td>Calle Granada, 123, Madrid, Madrid 28006</td>
+        <td>isabel@example.com</td>
+        <td>2020-11-10</td>
+      </tr>
+      <tr>
+        <td>Miguel</td>
+        <td>García Gómez</td>
+        <td>321456987</td>
+        <td>Calle Alameda, 789, Barcelona, Barcelona 08005</td>
+        <td>miguel@example.com</td>
+        <td>2020-12-20</td>
+      </tr>
+      <tr>
+        <td>Luisa</td>
+        <td>Rodríguez López</td>
+        <td>987654321</td>
+        <td>Calle Gran Vía, 456, Madrid, Madrid 28007</td>
+        <td>luisa@example.com</td>
+        <td>2020-11-05</td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Martínez López</td>
+        <td>654987321</td>
+        <td>Calle Gran Vía, 789, Madrid, Madrid 28004</td>
+        <td>carlos@example.com</td>
+        <td>2021-01-05</td>
+      </tr>
+      <tr>
+        <td>Sofía</td>
+        <td>García Martínez</td>
+        <td>678123789</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08002</td>
+        <td>sofia@example.com</td>
+        <td>2021-01-10</td>
+      </tr>
+      <tr>
+        <td>Luis</td>
+        <td>Ruiz Gómez</td>
+        <td>654789123</td>
+        <td>Calle Sevilla, 123, Sevilla, Sevilla 41003</td>
+        <td>luis@example.com</td>
+        <td>2021-01-15</td>
+      </tr>
+      <tr>
+        <td>Lucía</td>
+        <td>Pérez Rodríguez</td>
+        <td>678321654</td>
+        <td>Calle Alameda, 789, Valencia, Valencia 46004</td>
+        <td>lucia@example.com</td>
+        <td>2021-01-20</td>
+      </tr>
+      <tr>
+        <td>Javier</td>
+        <td>Fernández Pérez</td>
+        <td>987654321</td>
+        <td>Calle Granada, 456, Granada, Granada 18001</td>
+        <td>javier@example.com</td>
+        <td>2021-01-25</td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>Gómez Martínez</td>
+        <td>987321654</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28005</td>
+        <td>marta@example.com</td>
+        <td>2021-01-30</td>
+      </tr>
+      <tr>
+        <td>María</td>
+        <td>Rodríguez Gómez</td>
+        <td>654789321</td>
+        <td>Calle Gran Vía, 789, Barcelona, Barcelona 08003</td>
+        <td>maria@example.com</td>
+        <td>2021-02-05</td>
+      </tr>
+      <tr>
+        <td>Jorge</td>
+        <td>López Martínez</td>
+        <td>321654987</td>
+        <td>Calle Sevilla, 456, Sevilla, Sevilla 41004</td>
+        <td>jorge@example.com</td>
+        <td>2021-02-10</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>Fernández García</td>
+        <td>987321654</td>
+        <td>Calle Alameda, 789, Valencia, Valencia 46005</td>
+        <td>ana@example.com</td>
+        <td>2021-02-15</td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>Pérez González</td>
+        <td>654321987</td>
+        <td>Calle Granada, 456, Granada, Granada 18002</td>
+        <td>david@example.com</td>
+        <td>2021-02-20</td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>González Martínez</td>
+        <td>654987321</td>
+        <td>Calle Gran Vía, 789, Madrid, Madrid 28004</td>
+        <td>laura@example.com</td>
+        <td>2021-03-05</td>
+      </tr>
+      <tr>
+        <td>Pablo</td>
+        <td>Ruiz Gómez</td>
+        <td>678123789</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08002</td>
+        <td>pablo@example.com</td>
+        <td>2021-03-10</td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>López Rodríguez</td>
+        <td>654789123</td>
+        <td>Calle Sevilla, 123, Sevilla, Sevilla 41003</td>
+        <td>marta@example.com</td>
+        <td>2021-03-15</td>
+      </tr>
+      <tr>
+        <td>Lucas</td>
+        <td>Pérez López</td>
+        <td>678321654</td>
+        <td>Calle Alameda, 789, Valencia, Valencia 46004</td>
+        <td>lucas@example.com</td>
+        <td>2021-03-20</td>
+      </tr>
+      <tr>
+        <td>Sara</td>
+        <td>Gómez Fernández</td>
+        <td>678987123</td>
+        <td>Calle Granada, 456, Granada, Granada 18003</td>
+        <td>sara@example.com</td>
+        <td>2021-03-25</td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Fernández Ruiz</td>
+        <td>321987654</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28006</td>
+        <td>carlos@example.com</td>
+        <td>2021-03-30</td>
+      </tr>
+      <tr>
+        <td>Elena</td>
+        <td>Pérez Martínez</td>
+        <td>321654987</td>
+        <td>Calle Sevilla, 456, Sevilla, Sevilla 41005</td>
+        <td>elena@example.com</td>
+        <td>2021-04-05</td>
+      </tr>
+      <tr>
+        <td>Adrián</td>
+        <td>Rodríguez López</td>
+        <td>789123654</td>
+        <td>Calle Gran Vía, 123, Barcelona, Barcelona 08004</td>
+        <td>adrian@example.com</td>
+        <td>2021-04-10</td>
+      </tr>
+      <tr>
+        <td>María</td>
+        <td>Gómez Ruiz</td>
+        <td>789654321</td>
+        <td>Calle Alameda, 456, Valencia, Valencia 46005</td>
+        <td>maria@example.com</td>
+        <td>2021-04-15</td>
+      </tr>
+      <tr>
+        <td>Javier</td>
+        <td>Ruiz González</td>
+        <td>987654321</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28008</td>
+        <td>javier@example.com</td>
+        <td>2021-04-20</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>García Martínez</td>
+        <td>654123987</td>
+        <td>Calle Gran Vía, 123, Madrid, Madrid 28009</td>
+        <td>ana@example.com</td>
+        <td>2021-07-01</td>
+      </tr>
+      <tr>
+        <td>Miguel</td>
+        <td>López García</td>
+        <td>987321654</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28010</td>
+        <td>miguel@example.com</td>
+        <td>2021-07-06</td>
+      </tr>
+      <tr>
+        <td>Lucía</td>
+        <td>Ruiz Martínez</td>
+        <td>321654987</td>
+        <td>Calle Granada, 456, Granada, Granada 18004</td>
+        <td>lucia@example.com</td>
+        <td>2021-07-11</td>
+      </tr>
+      <tr>
+        <td>Diego</td>
+        <td>Pérez Fernández</td>
+        <td>321987654</td>
+        <td>Calle Alameda, 789, Valencia, Valencia 46006</td>
+        <td>diego@example.com</td>
+        <td>2021-07-16</td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>Gómez Sánchez</td>
+        <td>987654321</td>
+        <td>Calle Sevilla, 789, Sevilla, Sevilla 41006</td>
+        <td>laura@example.com</td>
+        <td>2021-07-21</td>
+      </tr>
+      <tr>
+        <td>Pablo</td>
+        <td>Rodríguez Gómez</td>
+        <td>654789321</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08005</td>
+        <td>pablo@example.com</td>
+        <td>2021-07-26</td>
+      </tr>
+      <tr>
+        <td>Sofía</td>
+        <td>Fernández López</td>
+        <td>789321654</td>
+        <td>Calle Gran Vía, 456, Madrid, Madrid 28011</td>
+        <td>sofia@example.com</td>
+        <td>2021-08-01</td>
+      </tr>
+      <tr>
+        <td>Daniel</td>
+        <td>García Sánchez</td>
+        <td>654987321</td>
+        <td>Calle Mayor, 789, Barcelona, Barcelona 08006</td>
+        <td>daniel@example.com</td>
+        <td>2021-08-06</td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>González Martínez</td>
+        <td>321987654</td>
+        <td>Calle Granada, 789, Granada, Granada 18005</td>
+        <td>marta@example.com</td>
+        <td>2021-08-11</td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Ruiz Fernández</td>
+        <td>987321654</td>
+        <td>Calle Mayor, 123, Madrid, Madrid 28012</td>
+        <td>carlos@example.com</td>
+        <td>2021-08-16</td>
+      </tr>
+      <tr>
+        <td>María</td>
+        <td>Rodríguez Gómez</td>
+        <td>654789321</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08001</td>
+        <td>maria@example.com</td>
+        <td>2022-01-05</td>
+      </tr>
+      <tr>
+        <td>David</td>
+        <td>Fernández López</td>
+        <td>987321654</td>
+        <td>Calle Gran Vía, 789, Madrid, Madrid 28002</td>
+        <td>david@example.com</td>
+        <td>2022-01-10</td>
+      </tr>
+      <tr>
+        <td>Sara</td>
+        <td>González Martínez</td>
+        <td>321987654</td>
+        <td>Calle Granada, 456, Granada, Granada 18006</td>
+        <td>sara@example.com</td>
+        <td>2022-01-15</td>
+      </tr>
+      <tr>
+        <td>Javier</td>
+        <td>Ruiz Fernández</td>
+        <td>654987321</td>
+        <td>Calle Mayor, 789, Barcelona, Barcelona 08003</td>
+        <td>javier@example.com</td>
+        <td>2022-01-20</td>
+      </tr>
+      <tr>
+        <td>Lucía</td>
+        <td>García Pérez</td>
+        <td>123456789</td>
+        <td>Calle Sevilla, 123, Sevilla, Sevilla 41001</td>
+        <td>lucia@example.com</td>
+        <td>2022-01-25</td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Rodríguez Sánchez</td>
+        <td>987654321</td>
+        <td>Calle Gran Vía, 456, Madrid, Madrid 28004</td>
+        <td>carlos@example.com</td>
+        <td>2022-01-30</td>
+      </tr>
+      <tr>
+        <td>Elena</td>
+        <td>Fernández Gómez</td>
+        <td>654321987</td>
+        <td>Calle Mayor, 789, Barcelona, Barcelona 08005</td>
+        <td>elena@example.com</td>
+        <td>2022-02-05</td>
+      </tr>
+      <tr>
+        <td>Andrea</td>
+        <td>Gómez Martínez</td>
+        <td>321654987</td>
+        <td>Calle Sevilla, 456, Sevilla, Sevilla 41002</td>
+        <td>andrea@example.com</td>
+        <td>2022-02-10</td>
+      </tr>
+      <tr>
+        <td>Pablo</td>
+        <td>Sanchez Gómez</td>
+        <td>987654123</td>
+        <td>Calle Granada, 789, Granada, Granada 18007</td>
+        <td>pablo@example.com</td>
+        <td>2022-02-15</td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>García López</td>
+        <td>456789123</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08006</td>
+        <td>laura@example.com</td>
+        <td>2022-02-20</td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>González Martínez</td>
+        <td>654123789</td>
+        <td>Calle Mayor, 456, Madrid, Madrid 28003</td>
+        <td>marta@example.com</td>
+        <td>2022-04-05</td>
+      </tr>
+      <tr>
+        <td>Luis</td>
+        <td>Rodríguez Sánchez</td>
+        <td>987789456</td>
+        <td>Calle Gran Vía, 789, Barcelona, Barcelona 08007</td>
+        <td>luis@example.com</td>
+        <td>2022-04-10</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>Gómez Martín</td>
+        <td>321654987</td>
+        <td>Calle Granada, 456, Granada, Granada 18008</td>
+        <td>ana@example.com</td>
+        <td>2022-04-15</td>
+      </tr>
+      <tr>
+        <td>Mario</td>
+        <td>García Pérez</td>
+        <td>123789456</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28004</td>
+        <td>mario@example.com</td>
+        <td>2022-04-20</td>
+      </tr>
+      <tr>
+        <td>Elena</td>
+        <td>Sanchez López</td>
+        <td>789456123</td>
+        <td>Calle Sevilla, 123, Sevilla, Sevilla 41003</td>
+        <td>elena@example.com</td>
+        <td>2022-04-25</td>
+      </tr>
+      <tr>
+        <td>Andrés</td>
+        <td>González Martínez</td>
+        <td>654123789</td>
+        <td>Calle Mayor, 456, Madrid, Madrid 28005</td>
+        <td>andres@example.com</td>
+        <td>2022-05-01</td>
+      </tr>
+      <tr>
+        <td>Julia</td>
+        <td>Rodríguez Gómez</td>
+        <td>987789456</td>
+        <td>Calle Gran Vía, 789, Barcelona, Barcelona 08008</td>
+        <td>julia@example.com</td>
+        <td>2022-05-05</td>
+      </tr>
+      <tr>
+        <td>Diego</td>
+        <td>Fernández López</td>
+        <td>321654987</td>
+        <td>Calle Granada, 456, Granada, Granada 18009</td>
+        <td>diego@example.com</td>
+        <td>2022-05-10</td>
+      </tr>
+      <tr>
+        <td>Lorena</td>
+        <td>Martínez García</td>
+        <td>123789456</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28006</td>
+        <td>lorena@example.com</td>
+        <td>2022-05-15</td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Gómez Sánchez</td>
+        <td>789456123</td>
+        <td>Calle Sevilla, 123, Sevilla, Sevilla 41004</td>
+        <td>carlos@example.com</td>
+        <td>2022-05-20</td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>Fernández Gutiérrez</td>
+        <td>654987321</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28007</td>
+        <td>laura@example.com</td>
+        <td>2022-07-05</td>
+      </tr>
+      <tr>
+        <td>Roberto</td>
+        <td>Ruiz Martínez</td>
+        <td>987654321</td>
+        <td>Calle Gran Vía, 456, Barcelona, Barcelona 08009</td>
+        <td>roberto@example.com</td>
+        <td>2022-07-10</td>
+      </tr>
+      <tr>
+        <td>Carmen</td>
+        <td>López Sánchez</td>
+        <td>789321654</td>
+        <td>Calle Granada, 123, Granada, Granada 18010</td>
+        <td>carmen@example.com</td>
+        <td>2022-07-15</td>
+      </tr>
+      <tr>
+        <td>Javier</td>
+        <td>Martínez Gómez</td>
+        <td>321789654</td>
+        <td>Calle Mayor, 123, Madrid, Madrid 28008</td>
+        <td>javier@example.com</td>
+        <td>2022-07-20</td>
+      </tr>
+      <tr>
+        <td>María</td>
+        <td>García Rodríguez</td>
+        <td>987321654</td>
+        <td>Calle Sevilla, 456, Sevilla, Sevilla 41005</td>
+        <td>maria@example.com</td>
+        <td>2022-07-25</td>
+      </tr>
+      <tr>
+        <td>Manuel</td>
+        <td>Ramírez López</td>
+        <td>789654123</td>
+        <td>Calle Gran Vía, 789, Barcelona, Barcelona 08010</td>
+        <td>manuel@example.com</td>
+        <td>2022-08-01</td>
+      </tr>
+      <tr>
+        <td>Sara</td>
+        <td>Fernández Rodríguez</td>
+        <td>456987321</td>
+        <td>Calle Mayor, 456, Madrid, Madrid 28009</td>
+        <td>sara@example.com</td>
+        <td>2022-08-05</td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>López Martínez</td>
+        <td>789654321</td>
+        <td>Calle Granada, 789, Granada, Granada 18011</td>
+        <td>marta@example.com</td>
+        <td>2022-08-10</td>
+      </tr>
+      <tr>
+        <td>Diego</td>
+        <td>Gómez Rodríguez</td>
+        <td>321456987</td>
+        <td>Calle Sevilla, 789, Sevilla, Sevilla 41006</td>
+        <td>diego@example.com</td>
+        <td>2022-08-15</td>
+      </tr>
+      <tr>
+        <td>Lucía</td>
+        <td>García Sánchez</td>
+        <td>987456321</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28010</td>
+        <td>lucia@example.com</td>
+        <td>2022-08-20</td>
+      </tr>
+      <tr>
+        <td>Marta</td>
+        <td>López Martínez</td>
+        <td>789654321</td>
+        <td>Calle Granada, 789, Granada, Granada 18011</td>
+        <td>marta@example.com</td>
+        <td>2022-10-05</td>
+      </tr>
+      <tr>
+        <td>Diego</td>
+        <td>Gómez Rodríguez</td>
+        <td>321456987</td>
+        <td>Calle Sevilla, 789, Sevilla, Sevilla 41006</td>
+        <td>diego@example.com</td>
+        <td>2022-10-10</td>
+      </tr>
+      <tr>
+        <td>Lucía</td>
+        <td>García Sánchez</td>
+        <td>987456321</td>
+        <td>Calle Mayor, 789, Madrid, Madrid 28010</td>
+        <td>lucia@example.com</td>
+        <td>2022-10-15</td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>Martínez García</td>
+        <td>654123789</td>
+        <td>Calle Gran Vía, 456, Barcelona, Barcelona 08020</td>
+        <td>carlos@example.com</td>
+        <td>2022-10-20</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>Gómez Martínez</td>
+        <td>147258369</td>
+        <td>Calle Mayor, 123, Madrid, Madrid 28005</td>
+        <td>ana@example.com</td>
+        <td>2022-10-25</td>
+      </tr>
+      <tr>
+        <td>Javier</td>
+        <td>González Rodríguez</td>
+        <td>369852147</td>
+        <td>Calle Serrano, 456, Madrid, Madrid 28006</td>
+        <td>javier@example.com</td>
+        <td>2022-10-30</td>
+      </tr>
+      <tr>
+        <td>Elena</td>
+        <td>Sanchez López</td>
+        <td>258369147</td>
+        <td>Calle Alcalá, 789, Madrid, Madrid 28007</td>
+        <td>elena@example.com</td>
+        <td>2022-11-05</td>
+      </tr>
+      <tr>
+        <td>Sara</td>
+        <td>Ruiz García</td>
+        <td>369147258</td>
+        <td>Calle Mayor, 456, Barcelona, Barcelona 08030</td>
+        <td>sara@example.com</td>
+        <td>2022-11-10</td>
+      </tr>
+      <tr>
+        <td>Adrián</td>
+        <td>López Sánchez</td>
+        <td>852369147</td>
+        <td>Calle Gran Vía, 123, Barcelona, Barcelona 08040</td>
+        <td>adrian@example.com</td>
+        <td>2022-11-15</td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>Fernández Martínez</td>
+        <td>147852369</td>
+        <td>Calle Serrano, 789, Madrid, Madrid 28008</td>
+        <td>laura@example.com</td>
+        <td>2022-11-20</td>
+      </tr>
+    </table>
+    <h2>Facturas</h2>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>1<br/><strong>Cliente:</strong>María González Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 789, Barcelona, Barcelona 08003<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Chaqueta de Cuero Zara (1 unidad/es) - 60 €<br/>
+        - Pantalón Vaquero Stradivarius (1 unidad/es) - 30 €<br/></div><strong>Total de la Factura:</strong>90.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>2<br/><strong>Cliente:</strong>José Ruiz Sánchez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Madrid, Madrid 28004<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Zapatillas Adidas Superstar (2 unidad/es) - 180 €<br/>
+        - Jersey HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>200.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>3<br/><strong>Cliente:</strong>Andrea Fernández Gutiérrez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 456, Valencia, Valencia 46002<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta Manga Corta PullandBear (1 unidad/es) - 30 €<br/>
+        - Short Deportivo Nike (1 unidad/es) - 50 €<br/></div><strong>Total de la Factura:</strong>80.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>4<br/><strong>Cliente:</strong>Laura Rodríguez Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 789, Sevilla, Sevilla 41002<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Botas Timberland (1 unidad/es) - 100 €<br/>
+        - Bufanda Mango (1 unidad/es) - 50 €<br/></div><strong>Total de la Factura:</strong>150.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>5<br/><strong>Cliente:</strong>Pedro Martínez Sánchez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 123, Barcelona, Barcelona 08001<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Sudadera GAP (1 unidad/es) - 70 €<br/>
+        - Gorra New Era (1 unidad/es) - 25 €<br/></div><strong>Total de la Factura:</strong>95.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>6<br/><strong>Cliente:</strong>Ana López García<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 123, Madrid, Madrid 28005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Jersey Massimo Dutti (1 unidad/es) - 80 €<br/>
+        - Jeans Levi's (1 unidad/es) - 50 €<br/></div><strong>Total de la Factura:</strong>130.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>7<br/><strong>Cliente:</strong>David Pérez Rodríguez<br/><strong>Dirección de Envío:</strong><br/>Calle Alameda, 456, Valencia, Valencia 46003<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta Vans (1 unidad/es) - 40 €<br/>
+        - Calcetines HUF (1 unidad/es) - 30 €<br/></div><strong>Total de la Factura:</strong>70.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>8<br/><strong>Cliente:</strong>Isabel Martínez Pérez<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 123, Madrid, Madrid 28006<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Chaqueta Helly Hansen (1 unidad/es) - 80 €<br/>
+        - Bufanda Zara (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>100.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>9<br/><strong>Cliente:</strong>Miguel García Gómez<br/><strong>Dirección de Envío:</strong><br/>Calle Alameda, 789, Barcelona, Barcelona 08005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Sudadera Nike (1 unidad/es) - 80 €<br/>
+        - Pantalón Chino Dockers (1 unidad/es) - 40 €<br/></div><strong>Total de la Factura:</strong>120.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>10<br/><strong>Cliente:</strong>Luisa Rodríguez López<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 456, Madrid, Madrid 28007<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Zapatillas Converse (1 unidad/es) - 60 €<br/>
+        - Camiseta Bershka (1 unidad/es) - 25 €<br/></div><strong>Total de la Factura:</strong>85.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>11<br/><strong>Cliente:</strong>Carlos Martínez López<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 789, Madrid, Madrid 28004<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camisa Ralph Lauren (1 unidad/es) - 80 €<br/>
+        - Short Adidas (1 unidad/es) - 40 €<br/></div><strong>Total de la Factura:</strong>120.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>12<br/><strong>Cliente:</strong>Sofía García Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 456, Barcelona, Barcelona 08002<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Sandalias Birkenstock (1 unidad/es) - 50 €<br/>
+        - Bufanda PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>70.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>13<br/><strong>Cliente:</strong>Luis Ruiz Gómez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 123, Sevilla, Sevilla 41003<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Pantalón Corto HyM (1 unidad/es) - 70 €<br/>
+        - Camiseta Manga Larga Uniqlo (1 unidad/es) - 25 €<br/></div><strong>Total de la Factura:</strong>95.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>14<br/><strong>Cliente:</strong>Lucía Pérez Rodríguez<br/><strong>Dirección de Envío:</strong><br/>Calle Alameda, 789, Valencia, Valencia 46004<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camisa Zara (1 unidad/es) - 80 €<br/>
+        - Pañuelo Desigual (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>100.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>15<br/><strong>Cliente:</strong>Javier Fernández Pérez<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 456, Granada, Granada 18001<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Zapatos Clarks (1 unidad/es) - 60 €<br/>
+        - Jersey Mango (1 unidad/es) - 25 €<br/></div><strong>Total de la Factura:</strong>85.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>16<br/><strong>Cliente:</strong>Marta Gómez Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Madrid, Madrid 28005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Blusa Stradivarius (1 unidad/es) - 80 €<br/>
+        - Pantalón Vaquero PullandBear (1 unidad/es) - 50 €<br/></div><strong>Total de la Factura:</strong>130.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>17<br/><strong>Cliente:</strong>María Rodríguez Gómez<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 789, Barcelona, Barcelona 08003<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta Polo Ralph Lauren (1 unidad/es) - 50 €<br/>
+        - Gorra Nike (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>70.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>18<br/><strong>Cliente:</strong>Jorge López Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 456, Sevilla, Sevilla 41004<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Short Puma (1 unidad/es) - 70 €<br/>
+        - Camiseta PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>90.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>19<br/><strong>Cliente:</strong>Ana Fernández García<br/><strong>Dirección de Envío:</strong><br/>Calle Alameda, 789, Valencia, Valencia 46005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Falda Zara (1 unidad/es) - 60 €<br/>
+        - Cinturón HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>80.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>20<br/><strong>Cliente:</strong>David Pérez González<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 456, Granada, Granada 18002<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Chaqueta Tommy Hilfiger (1 unidad/es) - 90 €<br/>
+        - Bufanda Zara (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>110.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>21<br/><strong>Cliente:</strong>Laura González Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 789, Madrid, Madrid 28004<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Vestido Zara (1 unidad/es) - 100 €<br/>
+        - Sombrero HyM (1 unidad/es) - 40 €<br/></div><strong>Total de la Factura:</strong>140.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>22<br/><strong>Cliente:</strong>Pablo Ruiz Gómez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 456, Barcelona, Barcelona 08002<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta Mango (1 unidad/es) - 55 €<br/>
+        - Gafas de Sol Ray-Ban (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>75.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>23<br/><strong>Cliente:</strong>Marta López Rodríguez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 123, Sevilla, Sevilla 41003<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Chaqueta HyM (1 unidad/es) - 60 €<br/>
+        - Falda Mango (1 unidad/es) - 25 €<br/></div><strong>Total de la Factura:</strong>85.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>24<br/><strong>Cliente:</strong>Lucas Pérez López<br/><strong>Dirección de Envío:</strong><br/>Calle Alameda, 789, Valencia, Valencia 46004<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Zapatos Timberland (1 unidad/es) - 75 €<br/>
+        - Pañuelo Desigual (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>95.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>25<br/><strong>Cliente:</strong>Sara Gómez Fernández<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 456, Granada, Granada 18003<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Chaqueta Mango (1 unidad/es) - 100 €<br/>
+        - Bufanda HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>120.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>26<br/><strong>Cliente:</strong>Carlos Fernández Ruiz<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Madrid, Madrid 28006<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta PullandBear (1 unidad/es) - 45 €<br/>
+        - Gorra Adidas (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>65.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>27<br/><strong>Cliente:</strong>Elena Pérez Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 456, Sevilla, Sevilla 41005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Pantalón Zara (1 unidad/es) - 90 €<br/>
+        - Sombrero PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>110.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>28<br/><strong>Cliente:</strong>Adrián Rodríguez López<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 123, Barcelona, Barcelona 08004<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Zapatos HyM (1 unidad/es) - 75 €<br/>
+        - Gorra PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>95.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>29<br/><strong>Cliente:</strong>María Gómez Ruiz<br/><strong>Dirección de Envío:</strong><br/>Calle Alameda, 456, Valencia, Valencia 46005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Chaqueta Pulland Bear (1 unidad/es) - 100 €<br/>
+        - Bufanda Mango (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>120.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>30<br/><strong>Cliente:</strong>Javier Ruiz González<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Madrid, Madrid 28008<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta Zara (1 unidad/es) - 45 €<br/>
+        - Gafas de Sol HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>65.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>31<br/><strong>Cliente:</strong>Ana García Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 123, Madrid, Madrid 28009<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Jersey Mango (1 unidad/es) - 60 €<br/>
+        - Bufanda Zara (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>80.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>32<br/><strong>Cliente:</strong>Miguel López García<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Madrid, Madrid 28010<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Botines Timberland (1 unidad/es) - 90 €<br/>
+        - Pañuelo Mango (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>110.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>33<br/><strong>Cliente:</strong>Lucía Ruiz Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 456, Granada, Granada 18004<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Sudadera PullandBear (1 unidad/es) - 50 €<br/>
+        - Guantes HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>70.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>34<br/><strong>Cliente:</strong>Diego Pérez Fernández<br/><strong>Dirección de Envío:</strong><br/>Calle Alameda, 789, Valencia, Valencia 46006<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camisa Zara (1 unidad/es) - 75 €<br/>
+        - Corbata HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>95.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>35<br/><strong>Cliente:</strong>Laura Gómez Sánchez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 789, Sevilla, Sevilla 41006<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta Mango (1 unidad/es) - 80 €<br/>
+        - Pañuelo PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>100.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>36<br/><strong>Cliente:</strong>Pablo Rodríguez Gómez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 456, Barcelona, Barcelona 08005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Jersey PullandBear (1 unidad/es) - 65 €<br/>
+        - Gorro Zara (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>85.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>37<br/><strong>Cliente:</strong>Sofía Fernández López<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 456, Madrid, Madrid 28011<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Sudadera Zara (1 unidad/es) - 55 €<br/>
+        - Bufanda PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>75.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>38<br/><strong>Cliente:</strong>Daniel García Sánchez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Barcelona, Barcelona 08006<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Botas Mango (1 unidad/es) - 100 €<br/>
+        - Gorro PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>120.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>39<br/><strong>Cliente:</strong>Marta González Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 789, Granada, Granada 18005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Pantalón PullandBear (1 unidad/es) - 70 €<br/>
+        - Calcetines HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>90.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>40<br/><strong>Cliente:</strong>Carlos Ruiz Fernández<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 123, Madrid, Madrid 28012<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camisa Mango (1 unidad/es) - 85 €<br/>
+        - Pañuelo Zara (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>105.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>1<br/><strong>Cliente:</strong>María Rodríguez Gómez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 456, Barcelona, Barcelona 08001<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta Zara (1 unidad/es) - 90 €<br/>
+        - Pañuelo Mango (1 unidad/es) - 30 €<br/></div><strong>Total de la Factura:</strong>120.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>2<br/><strong>Cliente:</strong>David Fernández López<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 789, Madrid, Madrid 28002<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Sudadera PullandBear (1 unidad/es) - 60 €<br/>
+        - Bufanda HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>80.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>3<br/><strong>Cliente:</strong>Sara González Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 456, Granada, Granada 18006<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Zapatos Mango (1 unidad/es) - 80 €<br/>
+        - Gorro PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>100.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>4<br/><strong>Cliente:</strong>Javier Ruiz Fernández<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Barcelona, Barcelona 08003<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Jersey Zara (1 unidad/es) - 70 €<br/>
+        - Calcetines HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>90.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>5<br/><strong>Cliente:</strong>Lucía García Pérez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 123, Sevilla, Sevilla 41001<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camisa Mango (1 unidad/es) - 90 €<br/>
+        - Bufanda Zara (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>110.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>6<br/><strong>Cliente:</strong>Carlos Rodríguez Sánchez<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 456, Madrid, Madrid 28004<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Pantalón Zara (1 unidad/es) - 75 €<br/>
+        - Corbata HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>95.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>7<br/><strong>Cliente:</strong>Elena Fernández Gómez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Barcelona, Barcelona 08005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Zapatillas Mango (1 unidad/es) - 65 €<br/>
+        - Gorro PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>85.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>8<br/><strong>Cliente:</strong>Andrea Gómez Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 456, Sevilla, Sevilla 41002<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Abrigo Zara (1 unidad/es) - 110 €<br/>
+        - Guantes HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>130.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>9<br/><strong>Cliente:</strong>Pablo Sanchez Gómez<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 789, Granada, Granada 18007<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Sudadera Mango (1 unidad/es) - 75 €<br/>
+        - Bufanda PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>95.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>10<br/><strong>Cliente:</strong>Laura García López<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 456, Barcelona, Barcelona 08006<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Zapatos PullandBear (1 unidad/es) - 90 €<br/>
+        - Corbata Zara (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>110.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>1<br/><strong>Cliente:</strong>Marta González Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 456, Madrid, Madrid 28003<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camisa Mango (1 unidad/es) - 100 €<br/>
+        - Pantalón Zara (1 unidad/es) - 50 €<br/></div><strong>Total de la Factura:</strong>150.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>2<br/><strong>Cliente:</strong>Luis Rodríguez Sánchez<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 789, Barcelona, Barcelona 08007<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Sudadera PullandBear (1 unidad/es) - 60 €<br/>
+        - Bufanda HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>80.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>3<br/><strong>Cliente:</strong>Ana Gómez Martín<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 456, Granada, Granada 18008<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Zapatos Mango (1 unidad/es) - 80 €<br/>
+        - Gorro PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>100.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>4<br/><strong>Cliente:</strong>Mario García Pérez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Madrid, Madrid 28004<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Jersey HyM (1 unidad/es) - 90 €<br/>
+        - Bufanda Zara (1 unidad/es) - 30 €<br/></div><strong>Total de la Factura:</strong>120.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>5<br/><strong>Cliente:</strong>Elena Sanchez López<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 123, Sevilla, Sevilla 41003<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta Zara (1 unidad/es) - 50 €<br/>
+        - Calcetines HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>70.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>6<br/><strong>Cliente:</strong>Andrés González Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 456, Madrid, Madrid 28005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Pantalón PullandBear (1 unidad/es) - 70 €<br/>
+        - Corbata HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>90.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>7<br/><strong>Cliente:</strong>Julia Rodríguez Gómez<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 789, Barcelona, Barcelona 08008<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Abrigo Mango (1 unidad/es) - 65 €<br/>
+        - Guantes PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>85.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>8<br/><strong>Cliente:</strong>Diego Fernández López<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 456, Granada, Granada 18009<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Jersey Zara (1 unidad/es) - 90 €<br/>
+        - Bufanda Mango (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>110.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>9<br/><strong>Cliente:</strong>Lorena Martínez García<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Madrid, Madrid 28006<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camisa PullandBear (1 unidad/es) - 55 €<br/>
+        - Pañuelo Zara (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>75.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>10<br/><strong>Cliente:</strong>Carlos Gómez Sánchez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 123, Sevilla, Sevilla 41004<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Pantalón HyM (1 unidad/es) - 80 €<br/>
+        - Gorra PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>100.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>11<br/><strong>Cliente:</strong>Laura Fernández Gutiérrez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Madrid, Madrid 28007<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Sudadera HyM (1 unidad/es) - 80 €<br/>
+        - Pañuelo Mango (1 unidad/es) - 40 €<br/></div><strong>Total de la Factura:</strong>120.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>12<br/><strong>Cliente:</strong>Roberto Ruiz Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 456, Barcelona, Barcelona 08009<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta Mango (1 unidad/es) - 70 €<br/>
+        - Bufanda PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>90.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>13<br/><strong>Cliente:</strong>Carmen López Sánchez<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 123, Granada, Granada 18010<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Chaqueta Zara (1 unidad/es) - 100 €<br/>
+        - Gorro PullandBear (1 unidad/es) - 40 €<br/></div><strong>Total de la Factura:</strong>140.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>14<br/><strong>Cliente:</strong>Javier Martínez Gómez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 123, Madrid, Madrid 28008<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camisa PullandBear (1 unidad/es) - 60 €<br/>
+        - Gafas de sol HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>80.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>15<br/><strong>Cliente:</strong>María García Rodríguez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 456, Sevilla, Sevilla 41005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Pantalón Mango (1 unidad/es) - 80 €<br/>
+        - Sombrero PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>100.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>16<br/><strong>Cliente:</strong>Manuel Ramírez López<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 789, Barcelona, Barcelona 08010<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Chaqueta HyM (1 unidad/es) - 70 €<br/>
+        - Bufanda Zara (1 unidad/es) - 25 €<br/></div><strong>Total de la Factura:</strong>95.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>17<br/><strong>Cliente:</strong>Sara Fernández Rodríguez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 456, Madrid, Madrid 28009<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Jersey PullandBear (1 unidad/es) - 65 €<br/>
+        - Gorra HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>85.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>18<br/><strong>Cliente:</strong>Marta López Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 789, Granada, Granada 18011<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camisa Mango (1 unidad/es) - 80 €<br/>
+        - Bufanda PullandBear (1 unidad/es) - 30 €<br/></div><strong>Total de la Factura:</strong>110.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>19<br/><strong>Cliente:</strong>Diego Gómez Rodríguez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 789, Sevilla, Sevilla 41006<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Pantalón Zara (1 unidad/es) - 60 €<br/>
+        - Gorra Mango (1 unidad/es) - 15 €<br/></div><strong>Total de la Factura:</strong>75.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>20<br/><strong>Cliente:</strong>Lucía García Sánchez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Madrid, Madrid 28010<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Sudadera PullandBear (1 unidad/es) - 75 €<br/>
+        - Pañuelo HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>95.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>21<br/><strong>Cliente:</strong>Marta López Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Granada, 789, Granada, Granada 18011<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camisa Mango (1 unidad/es) - 80 €<br/>
+        - Bufanda PullandBear (1 unidad/es) - 30 €<br/></div><strong>Total de la Factura:</strong>110.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>22<br/><strong>Cliente:</strong>Diego Gómez Rodríguez<br/><strong>Dirección de Envío:</strong><br/>Calle Sevilla, 789, Sevilla, Sevilla 41006<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Pantalón Zara (1 unidad/es) - 60 €<br/>
+        - Gorra Mango (1 unidad/es) - 15 €<br/></div><strong>Total de la Factura:</strong>75.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>23<br/><strong>Cliente:</strong>Lucía García Sánchez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 789, Madrid, Madrid 28010<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Sudadera PullandBear (1 unidad/es) - 75 €<br/>
+        - Pañuelo HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>95.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>24<br/><strong>Cliente:</strong>Carlos Martínez García<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 456, Barcelona, Barcelona 08020<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Chaqueta Zara (1 unidad/es) - 90 €<br/>
+        - Gorra PullandBear (1 unidad/es) - 30 €<br/></div><strong>Total de la Factura:</strong>120.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>25<br/><strong>Cliente:</strong>Ana Gómez Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 123, Madrid, Madrid 28005<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Jersey Mango (1 unidad/es) - 65 €<br/>
+        - Gafas de sol HyM (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>85.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>26<br/><strong>Cliente:</strong>Javier González Rodríguez<br/><strong>Dirección de Envío:</strong><br/>Calle Serrano, 456, Madrid, Madrid 28006<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta PullandBear (1 unidad/es) - 80 €<br/>
+        - Bufanda Zara (1 unidad/es) - 25 €<br/></div><strong>Total de la Factura:</strong>105.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>27<br/><strong>Cliente:</strong>Elena Sanchez López<br/><strong>Dirección de Envío:</strong><br/>Calle Alcalá, 789, Madrid, Madrid 28007<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camisa HyM (1 unidad/es) - 70 €<br/>
+        - Gorra PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>90.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>28<br/><strong>Cliente:</strong>Sara Ruiz García<br/><strong>Dirección de Envío:</strong><br/>Calle Mayor, 456, Barcelona, Barcelona 08030<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Pantalón Zara (1 unidad/es) - 60 €<br/>
+        - Bufanda Mango (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>80.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>29<br/><strong>Cliente:</strong>Adrián López Sánchez<br/><strong>Dirección de Envío:</strong><br/>Calle Gran Vía, 123, Barcelona, Barcelona 08040<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Jersey PullandBear (1 unidad/es) - 50 €<br/>
+        - Gorra Zara (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>70.00 €
+  </div>
+    <div class="invoice-card"><h3>Factura</h3><div class="invoice-details"><strong>Número de Pedido:</strong>30<br/><strong>Cliente:</strong>Laura Fernández Martínez<br/><strong>Dirección de Envío:</strong><br/>Calle Serrano, 789, Madrid, Madrid 28008<br/></div><div class="invoice-products"><strong>Productos:</strong><br/>
+        - Camiseta HyM (1 unidad/es) - 80 €<br/>
+        - Bufanda PullandBear (1 unidad/es) - 20 €<br/></div><strong>Total de la Factura:</strong>100.00 €
+  </div>
+    <h2>Productos Vendidos en el Primer Trimestre de 2021 y Último Trimestre de 2022</h2>
+    <table>
+      <tr>
+        <th>Nombre del Producto</th>
+        <th>Unidades Vendidas</th>
+      </tr>
+    </table>
+  </body>
+</html>

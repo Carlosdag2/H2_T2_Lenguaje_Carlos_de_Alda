@@ -1,0 +1,2832 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedidos SYSTEM "file:/C:/Users/Campus%20FP/Desktop/carlos/Lenguaje_de_marcas/H2_T2/H2_T2_LM_Carlos_de_Alda.dtd">
+<pedidos>
+  <!-- Año 2021 -->
+  <anio año="2021">
+    <!-- Primer Trimestre -->
+    <trimestre numero="1">
+      <!-- Pedido 1 -->
+      <pedido>
+        <nombre>María</nombre>
+        <apellidos>González Martínez</apellidos>
+        <telefono>654987321</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 789</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08003</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>maria@example.com</correo>
+        <fecha_inclusion>2020-12-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>1</numero_pedido>
+          <fecha_compra>2021-01-03</fecha_compra>
+          <fecha_entrega>2021-01-13</fecha_entrega>
+          <total_factura>90.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Chaqueta de Cuero Zara</nombre>
+              <referencia>ZR001</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pantalón Vaquero Stradivarius</nombre>
+              <referencia>SV001</referencia>
+              <precio>30.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 2 -->
+      <pedido>
+        <nombre>José</nombre>
+        <apellidos>Ruiz Sánchez</apellidos>
+        <telefono>678123789</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28004</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>jose@example.com</correo>
+        <fecha_inclusion>2020-11-25</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>2</numero_pedido>
+          <fecha_compra>2021-01-06</fecha_compra>
+          <fecha_entrega>2021-01-16</fecha_entrega>
+          <total_factura>200.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Zapatillas Adidas Superstar</nombre>
+              <referencia>AS002</referencia>
+              <precio>90.00</precio>
+              <unidades>2</unidades>
+            </producto>
+            <producto>
+              <nombre>Jersey HyM</nombre>
+              <referencia>HM001</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 3 -->
+      <pedido>
+        <nombre>Andrea</nombre>
+        <apellidos>Fernández Gutiérrez</apellidos>
+        <telefono>654789123</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 456</calle>
+          <ciudad>Valencia</ciudad>
+          <codigo_postal>46002</codigo_postal>
+          <provincia>Valencia</provincia>
+        </direccion>
+        <correo>andrea@example.com</correo>
+        <fecha_inclusion>2020-12-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>3</numero_pedido>
+          <fecha_compra>2021-01-10</fecha_compra>
+          <fecha_entrega>2021-01-20</fecha_entrega>
+          <total_factura>80.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta Manga Corta PullandBear</nombre>
+              <referencia>PB001</referencia>
+              <precio>30.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Short Deportivo Nike</nombre>
+              <referencia>NK003</referencia>
+              <precio>50.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 4 -->
+      <pedido>
+        <nombre>Laura</nombre>
+        <apellidos>Rodríguez Martínez</apellidos>
+        <telefono>678321654</telefono>
+        <direccion>
+          <calle>Calle Granada, 789</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41002</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>laura@example.com</correo>
+        <fecha_inclusion>2020-11-30</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>4</numero_pedido>
+          <fecha_compra>2021-01-12</fecha_compra>
+          <fecha_entrega>2021-01-22</fecha_entrega>
+          <total_factura>150.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Botas Timberland</nombre>
+              <referencia>TM001</referencia>
+              <precio>100.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda Mango</nombre>
+              <referencia>MG001</referencia>
+              <precio>50.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 5 -->
+      <pedido>
+        <nombre>Pedro</nombre>
+        <apellidos>Martínez Sánchez</apellidos>
+        <telefono>987321654</telefono>
+        <direccion>
+          <calle>Calle Mayor, 123</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08001</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>pedro@example.com</correo>
+        <fecha_inclusion>2020-12-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>5</numero_pedido>
+          <fecha_compra>2021-01-15</fecha_compra>
+          <fecha_entrega>2021-01-25</fecha_entrega>
+          <total_factura>95.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Sudadera GAP</nombre>
+              <referencia>GP001</referencia>
+              <precio>70.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorra New Era</nombre>
+              <referencia>NE001</referencia>
+              <precio>25.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 6 -->
+      <pedido>
+        <nombre>Ana</nombre>
+        <apellidos>López García</apellidos>
+        <telefono>654321789</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 123</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28005</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>ana@example.com</correo>
+        <fecha_inclusion>2020-11-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>6</numero_pedido>
+          <fecha_compra>2021-01-18</fecha_compra>
+          <fecha_entrega>2021-01-28</fecha_entrega>
+          <total_factura>130.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Jersey Massimo Dutti</nombre>
+              <referencia>MD001</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Jeans Levi's</nombre>
+              <referencia>LV002</referencia>
+              <precio>50.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 7 -->
+      <pedido>
+        <nombre>David</nombre>
+        <apellidos>Pérez Rodríguez</apellidos>
+        <telefono>321987654</telefono>
+        <direccion>
+          <calle>Calle Alameda, 456</calle>
+          <ciudad>Valencia</ciudad>
+          <codigo_postal>46003</codigo_postal>
+          <provincia>Valencia</provincia>
+        </direccion>
+        <correo>david@example.com</correo>
+        <fecha_inclusion>2020-12-01</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>7</numero_pedido>
+          <fecha_compra>2021-01-20</fecha_compra>
+          <fecha_entrega>2021-01-30</fecha_entrega>
+          <total_factura>70.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta Vans</nombre>
+              <referencia>VN001</referencia>
+              <precio>40.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Calcetines HUF</nombre>
+              <referencia>HU001</referencia>
+              <precio>30.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 8 -->
+      <pedido>
+        <nombre>Isabel</nombre>
+        <apellidos>Martínez Pérez</apellidos>
+        <telefono>321654987</telefono>
+        <direccion>
+          <calle>Calle Granada, 123</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28006</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>isabel@example.com</correo>
+        <fecha_inclusion>2020-11-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>8</numero_pedido>
+          <fecha_compra>2021-01-22</fecha_compra>
+          <fecha_entrega>2021-02-01</fecha_entrega>
+          <total_factura>100.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Chaqueta Helly Hansen</nombre>
+              <referencia>HH001</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda Zara</nombre>
+              <referencia>ZR002</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 9 -->
+      <pedido>
+        <nombre>Miguel</nombre>
+        <apellidos>García Gómez</apellidos>
+        <telefono>321456987</telefono>
+        <direccion>
+          <calle>Calle Alameda, 789</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08005</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>miguel@example.com</correo>
+        <fecha_inclusion>2020-12-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>9</numero_pedido>
+          <fecha_compra>2021-01-25</fecha_compra>
+          <fecha_entrega>2021-02-05</fecha_entrega>
+          <total_factura>120.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Sudadera Nike</nombre>
+              <referencia>NK002</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pantalón Chino Dockers</nombre>
+              <referencia>DK001</referencia>
+              <precio>40.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 10 -->
+      <pedido>
+        <nombre>Luisa</nombre>
+        <apellidos>Rodríguez López</apellidos>
+        <telefono>987654321</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 456</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28007</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>luisa@example.com</correo>
+        <fecha_inclusion>2020-11-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>10</numero_pedido>
+          <fecha_compra>2021-01-28</fecha_compra>
+          <fecha_entrega>2021-02-08</fecha_entrega>
+          <total_factura>85.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Zapatillas Converse</nombre>
+              <referencia>CV001</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Camiseta Bershka</nombre>
+              <referencia>BR001</referencia>
+              <precio>25.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+    </trimestre>
+
+    <trimestre numero="2">
+      <!-- Pedido 11 -->
+      <pedido>
+        <nombre>Carlos</nombre>
+        <apellidos>Martínez López</apellidos>
+        <telefono>654987321</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28004</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>carlos@example.com</correo>
+        <fecha_inclusion>2021-01-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>11</numero_pedido>
+          <fecha_compra>2021-04-03</fecha_compra>
+          <fecha_entrega>2021-04-13</fecha_entrega>
+          <total_factura>120.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camisa Ralph Lauren</nombre>
+              <referencia>RL001</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Short Adidas</nombre>
+              <referencia>AD002</referencia>
+              <precio>40.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 12 -->
+      <pedido>
+        <nombre>Sofía</nombre>
+        <apellidos>García Martínez</apellidos>
+        <telefono>678123789</telefono>
+        <direccion>
+          <calle>Calle Mayor, 456</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08002</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>sofia@example.com</correo>
+        <fecha_inclusion>2021-01-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>12</numero_pedido>
+          <fecha_compra>2021-04-06</fecha_compra>
+          <fecha_entrega>2021-04-16</fecha_entrega>
+          <total_factura>70.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Sandalias Birkenstock</nombre>
+              <referencia>BS001</referencia>
+              <precio>50.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda PullandBear</nombre>
+              <referencia>PB002</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 13 -->
+      <pedido>
+        <nombre>Luis</nombre>
+        <apellidos>Ruiz Gómez</apellidos>
+        <telefono>654789123</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 123</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41003</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>luis@example.com</correo>
+        <fecha_inclusion>2021-01-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>13</numero_pedido>
+          <fecha_compra>2021-04-10</fecha_compra>
+          <fecha_entrega>2021-04-20</fecha_entrega>
+          <total_factura>95.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Pantalón Corto HyM</nombre>
+              <referencia>HM002</referencia>
+              <precio>70.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Camiseta Manga Larga Uniqlo</nombre>
+              <referencia>UQ001</referencia>
+              <precio>25.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 14 -->
+      <pedido>
+        <nombre>Lucía</nombre>
+        <apellidos>Pérez Rodríguez</apellidos>
+        <telefono>678321654</telefono>
+        <direccion>
+          <calle>Calle Alameda, 789</calle>
+          <ciudad>Valencia</ciudad>
+          <codigo_postal>46004</codigo_postal>
+          <provincia>Valencia</provincia>
+        </direccion>
+        <correo>lucia@example.com</correo>
+        <fecha_inclusion>2021-01-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>14</numero_pedido>
+          <fecha_compra>2021-04-15</fecha_compra>
+          <fecha_entrega>2021-04-25</fecha_entrega>
+          <total_factura>100.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camisa Zara</nombre>
+              <referencia>ZR003</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pañuelo Desigual</nombre>
+              <referencia>DS001</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 15 -->
+      <pedido>
+        <nombre>Javier</nombre>
+        <apellidos>Fernández Pérez</apellidos>
+        <telefono>987654321</telefono>
+        <direccion>
+          <calle>Calle Granada, 456</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18001</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>javier@example.com</correo>
+        <fecha_inclusion>2021-01-25</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>15</numero_pedido>
+          <fecha_compra>2021-04-20</fecha_compra>
+          <fecha_entrega>2021-04-30</fecha_entrega>
+          <total_factura>85.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Zapatos Clarks</nombre>
+              <referencia>CK001</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Jersey Mango</nombre>
+              <referencia>MG002</referencia>
+              <precio>25.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 16 -->
+      <pedido>
+        <nombre>Marta</nombre>
+        <apellidos>Gómez Martínez</apellidos>
+        <telefono>987321654</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28005</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>marta@example.com</correo>
+        <fecha_inclusion>2021-01-30</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>16</numero_pedido>
+          <fecha_compra>2021-04-25</fecha_compra>
+          <fecha_entrega>2021-05-05</fecha_entrega>
+          <total_factura>130.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Blusa Stradivarius</nombre>
+              <referencia>SD001</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pantalón Vaquero PullandBear</nombre>
+              <referencia>PB003</referencia>
+              <precio>50.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 17 -->
+      <pedido>
+        <nombre>María</nombre>
+        <apellidos>Rodríguez Gómez</apellidos>
+        <telefono>654789321</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 789</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08003</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>maria@example.com</correo>
+        <fecha_inclusion>2021-02-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>17</numero_pedido>
+          <fecha_compra>2021-04-30</fecha_compra>
+          <fecha_entrega>2021-05-10</fecha_entrega>
+          <total_factura>70.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta Polo Ralph Lauren</nombre>
+              <referencia>RL002</referencia>
+              <precio>50.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorra Nike</nombre>
+              <referencia>NK003</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 18 -->
+      <pedido>
+        <nombre>Jorge</nombre>
+        <apellidos>López Martínez</apellidos>
+        <telefono>321654987</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 456</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41004</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>jorge@example.com</correo>
+        <fecha_inclusion>2021-02-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>18</numero_pedido>
+          <fecha_compra>2021-05-05</fecha_compra>
+          <fecha_entrega>2021-05-15</fecha_entrega>
+          <total_factura>90.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Short Puma</nombre>
+              <referencia>PM001</referencia>
+              <precio>70.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Camiseta PullandBear</nombre>
+              <referencia>PB004</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 19 -->
+      <pedido>
+        <nombre>Ana</nombre>
+        <apellidos>Fernández García</apellidos>
+        <telefono>987321654</telefono>
+        <direccion>
+          <calle>Calle Alameda, 789</calle>
+          <ciudad>Valencia</ciudad>
+          <codigo_postal>46005</codigo_postal>
+          <provincia>Valencia</provincia>
+        </direccion>
+        <correo>ana@example.com</correo>
+        <fecha_inclusion>2021-02-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>19</numero_pedido>
+          <fecha_compra>2021-05-10</fecha_compra>
+          <fecha_entrega>2021-05-20</fecha_entrega>
+          <total_factura>80.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Falda Zara</nombre>
+              <referencia>ZR004</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Cinturón HyM</nombre>
+              <referencia>HM003</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 20 -->
+      <pedido>
+        <nombre>David</nombre>
+        <apellidos>Pérez González</apellidos>
+        <telefono>654321987</telefono>
+        <direccion>
+          <calle>Calle Granada, 456</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18002</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>david@example.com</correo>
+        <fecha_inclusion>2021-02-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>20</numero_pedido>
+          <fecha_compra>2021-05-15</fecha_compra>
+          <fecha_entrega>2021-05-25</fecha_entrega>
+          <total_factura>110.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Chaqueta Tommy Hilfiger</nombre>
+              <referencia>TH001</referencia>
+              <precio>90.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda Zara</nombre>
+              <referencia>ZR005</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+    </trimestre>
+    
+    <!-- Tercer Trimestre -->
+    <trimestre numero="3">
+      <!-- Pedido 21 -->
+      <pedido>
+        <nombre>Laura</nombre>
+        <apellidos>González Martínez</apellidos>
+        <telefono>654987321</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28004</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>laura@example.com</correo>
+        <fecha_inclusion>2021-03-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>21</numero_pedido>
+          <fecha_compra>2021-07-03</fecha_compra>
+          <fecha_entrega>2021-07-13</fecha_entrega>
+          <total_factura>140.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Vestido Zara</nombre>
+              <referencia>ZR006</referencia>
+              <precio>100.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Sombrero HyM</nombre>
+              <referencia>HM004</referencia>
+              <precio>40.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 22 -->
+      <pedido>
+        <nombre>Pablo</nombre>
+        <apellidos>Ruiz Gómez</apellidos>
+        <telefono>678123789</telefono>
+        <direccion>
+          <calle>Calle Mayor, 456</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08002</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>pablo@example.com</correo>
+        <fecha_inclusion>2021-03-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>22</numero_pedido>
+          <fecha_compra>2021-07-06</fecha_compra>
+          <fecha_entrega>2021-07-16</fecha_entrega>
+          <total_factura>75.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta Mango</nombre>
+              <referencia>MG003</referencia>
+              <precio>55.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gafas de Sol Ray-Ban</nombre>
+              <referencia>RB001</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 23 -->
+      <pedido>
+        <nombre>Marta</nombre>
+        <apellidos>López Rodríguez</apellidos>
+        <telefono>654789123</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 123</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41003</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>marta@example.com</correo>
+        <fecha_inclusion>2021-03-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>23</numero_pedido>
+          <fecha_compra>2021-07-10</fecha_compra>
+          <fecha_entrega>2021-07-20</fecha_entrega>
+          <total_factura>85.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Chaqueta HyM</nombre>
+              <referencia>HM005</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Falda Mango</nombre>
+              <referencia>MG004</referencia>
+              <precio>25.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 24 -->
+      <pedido>
+        <nombre>Lucas</nombre>
+        <apellidos>Pérez López</apellidos>
+        <telefono>678321654</telefono>
+        <direccion>
+          <calle>Calle Alameda, 789</calle>
+          <ciudad>Valencia</ciudad>
+          <codigo_postal>46004</codigo_postal>
+          <provincia>Valencia</provincia>
+        </direccion>
+        <correo>lucas@example.com</correo>
+        <fecha_inclusion>2021-03-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>24</numero_pedido>
+          <fecha_compra>2021-07-15</fecha_compra>
+          <fecha_entrega>2021-07-25</fecha_entrega>
+          <total_factura>95.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Zapatos Timberland</nombre>
+              <referencia>TB001</referencia>
+              <precio>75.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pañuelo Desigual</nombre>
+              <referencia>DS002</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 25 -->
+      <pedido>
+        <nombre>Sara</nombre>
+        <apellidos>Gómez Fernández</apellidos>
+        <telefono>678987123</telefono>
+        <direccion>
+          <calle>Calle Granada, 456</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18003</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>sara@example.com</correo>
+        <fecha_inclusion>2021-03-25</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>25</numero_pedido>
+          <fecha_compra>2021-07-20</fecha_compra>
+          <fecha_entrega>2021-07-30</fecha_entrega>
+          <total_factura>120.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Chaqueta Mango</nombre>
+              <referencia>MG005</referencia>
+              <precio>100.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda HyM</nombre>
+              <referencia>HM006</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 26 -->
+      <pedido>
+        <nombre>Carlos</nombre>
+        <apellidos>Fernández Ruiz</apellidos>
+        <telefono>321987654</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28006</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>carlos@example.com</correo>
+        <fecha_inclusion>2021-03-30</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>26</numero_pedido>
+          <fecha_compra>2021-07-25</fecha_compra>
+          <fecha_entrega>2021-08-04</fecha_entrega>
+          <total_factura>65.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta PullandBear</nombre>
+              <referencia>PB005</referencia>
+              <precio>45.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorra Adidas</nombre>
+              <referencia>AD002</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 27 -->
+      <pedido>
+        <nombre>Elena</nombre>
+        <apellidos>Pérez Martínez</apellidos>
+        <telefono>321654987</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 456</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41005</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>elena@example.com</correo>
+        <fecha_inclusion>2021-04-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>27</numero_pedido>
+          <fecha_compra>2021-07-30</fecha_compra>
+          <fecha_entrega>2021-08-09</fecha_entrega>
+          <total_factura>110.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Pantalón Zara</nombre>
+              <referencia>ZR007</referencia>
+              <precio>90.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Sombrero PullandBear</nombre>
+              <referencia>PB006</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 28 -->
+      <pedido>
+        <nombre>Adrián</nombre>
+        <apellidos>Rodríguez López</apellidos>
+        <telefono>789123654</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 123</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08004</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>adrian@example.com</correo>
+        <fecha_inclusion>2021-04-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>28</numero_pedido>
+          <fecha_compra>2021-08-05</fecha_compra>
+          <fecha_entrega>2021-08-15</fecha_entrega>
+          <total_factura>95.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Zapatos HyM</nombre>
+              <referencia>HM007</referencia>
+              <precio>75.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorra PullandBear</nombre>
+              <referencia>PB007</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 29 -->
+      <pedido>
+        <nombre>María</nombre>
+        <apellidos>Gómez Ruiz</apellidos>
+        <telefono>789654321</telefono>
+        <direccion>
+          <calle>Calle Alameda, 456</calle>
+          <ciudad>Valencia</ciudad>
+          <codigo_postal>46005</codigo_postal>
+          <provincia>Valencia</provincia>
+        </direccion>
+        <correo>maria@example.com</correo>
+        <fecha_inclusion>2021-04-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>29</numero_pedido>
+          <fecha_compra>2021-08-10</fecha_compra>
+          <fecha_entrega>2021-08-20</fecha_entrega>
+          <total_factura>120.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Chaqueta Pulland Bear</nombre>
+              <referencia>PB008</referencia>
+              <precio>100.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda Mango</nombre>
+              <referencia>MG006</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 30 -->
+      <pedido>
+        <nombre>Javier</nombre>
+        <apellidos>Ruiz González</apellidos>
+        <telefono>987654321</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28008</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>javier@example.com</correo>
+        <fecha_inclusion>2021-04-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>30</numero_pedido>
+          <fecha_compra>2021-08-15</fecha_compra>
+          <fecha_entrega>2021-08-25</fecha_entrega>
+          <total_factura>65.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta Zara</nombre>
+              <referencia>ZR008</referencia>
+              <precio>45.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gafas de Sol HyM</nombre>
+              <referencia>HM008</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+    </trimestre>
+
+    <!-- Cuarto Trimestre -->
+    <trimestre numero="4">
+      <!-- Pedido 31 -->
+      <pedido>
+        <nombre>Ana</nombre>
+        <apellidos>García Martínez</apellidos>
+        <telefono>654123987</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 123</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28009</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>ana@example.com</correo>
+        <fecha_inclusion>2021-07-01</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>31</numero_pedido>
+          <fecha_compra>2021-10-01</fecha_compra>
+          <fecha_entrega>2021-10-11</fecha_entrega>
+          <total_factura>80.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Jersey Mango</nombre>
+              <referencia>MG007</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda Zara</nombre>
+              <referencia>ZR009</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 32 -->
+      <pedido>
+        <nombre>Miguel</nombre>
+        <apellidos>López García</apellidos>
+        <telefono>987321654</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28010</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>miguel@example.com</correo>
+        <fecha_inclusion>2021-07-06</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>32</numero_pedido>
+          <fecha_compra>2021-10-06</fecha_compra>
+          <fecha_entrega>2021-10-16</fecha_entrega>
+          <total_factura>110.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Botines Timberland</nombre>
+              <referencia>TB002</referencia>
+              <precio>90.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pañuelo Mango</nombre>
+              <referencia>MG008</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 33 -->
+      <pedido>
+        <nombre>Lucía</nombre>
+        <apellidos>Ruiz Martínez</apellidos>
+        <telefono>321654987</telefono>
+        <direccion>
+          <calle>Calle Granada, 456</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18004</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>lucia@example.com</correo>
+        <fecha_inclusion>2021-07-11</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>33</numero_pedido>
+          <fecha_compra>2021-10-11</fecha_compra>
+          <fecha_entrega>2021-10-21</fecha_entrega>
+          <total_factura>70.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Sudadera PullandBear</nombre>
+              <referencia>PB009</referencia>
+              <precio>50.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Guantes HyM</nombre>
+              <referencia>HM009</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 34 -->
+      <pedido>
+        <nombre>Diego</nombre>
+        <apellidos>Pérez Fernández</apellidos>
+        <telefono>321987654</telefono>
+        <direccion>
+          <calle>Calle Alameda, 789</calle>
+          <ciudad>Valencia</ciudad>
+          <codigo_postal>46006</codigo_postal>
+          <provincia>Valencia</provincia>
+        </direccion>
+        <correo>diego@example.com</correo>
+        <fecha_inclusion>2021-07-16</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>34</numero_pedido>
+          <fecha_compra>2021-10-16</fecha_compra>
+          <fecha_entrega>2021-10-26</fecha_entrega>
+          <total_factura>95.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camisa Zara</nombre>
+              <referencia>ZR010</referencia>
+              <precio>75.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Corbata HyM</nombre>
+              <referencia>HM010</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 35 -->
+      <pedido>
+        <nombre>Laura</nombre>
+        <apellidos>Gómez Sánchez</apellidos>
+        <telefono>987654321</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 789</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41006</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>laura@example.com</correo>
+        <fecha_inclusion>2021-07-21</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>35</numero_pedido>
+          <fecha_compra>2021-10-21</fecha_compra>
+          <fecha_entrega>2021-10-31</fecha_entrega>
+          <total_factura>100.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta Mango</nombre>
+              <referencia>MG009</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pañuelo PullandBear</nombre>
+              <referencia>PB010</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 36 -->
+      <pedido>
+        <nombre>Pablo</nombre>
+        <apellidos>Rodríguez Gómez</apellidos>
+        <telefono>654789321</telefono>
+        <direccion>
+          <calle>Calle Mayor, 456</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08005</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>pablo@example.com</correo>
+        <fecha_inclusion>2021-07-26</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>36</numero_pedido>
+          <fecha_compra>2021-10-26</fecha_compra>
+          <fecha_entrega>2021-11-05</fecha_entrega>
+          <total_factura>85.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Jersey PullandBear</nombre>
+              <referencia>PB011</referencia>
+              <precio>65.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorro Zara</nombre>
+              <referencia>ZR011</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 37 -->
+      <pedido>
+        <nombre>Sofía</nombre>
+        <apellidos>Fernández López</apellidos>
+        <telefono>789321654</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 456</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28011</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>sofia@example.com</correo>
+        <fecha_inclusion>2021-08-01</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>37</numero_pedido>
+          <fecha_compra>2021-11-01</fecha_compra>
+          <fecha_entrega>2021-11-11</fecha_entrega>
+          <total_factura>75.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Sudadera Zara</nombre>
+              <referencia>ZR012</referencia>
+              <precio>55.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda PullandBear</nombre>
+              <referencia>PB012</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 38 -->
+      <pedido>
+        <nombre>Daniel</nombre>
+        <apellidos>García Sánchez</apellidos>
+        <telefono>654987321</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08006</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>daniel@example.com</correo>
+        <fecha_inclusion>2021-08-06</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>38</numero_pedido>
+          <fecha_compra>2021-11-06</fecha_compra>
+          <fecha_entrega>2021-11-16</fecha_entrega>
+          <total_factura>120.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Botas Mango</nombre>
+              <referencia>MG010</referencia>
+              <precio>100.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorro PullandBear</nombre>
+              <referencia>PB013</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 39 -->
+      <pedido>
+        <nombre>Marta</nombre>
+        <apellidos>González Martínez</apellidos>
+        <telefono>321987654</telefono>
+        <direccion>
+          <calle>Calle Granada, 789</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18005</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>marta@example.com</correo>
+        <fecha_inclusion>2021-08-11</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>39</numero_pedido>
+          <fecha_compra>2021-11-11</fecha_compra>
+          <fecha_entrega>2021-11-21</fecha_entrega>
+          <total_factura>90.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Pantalón PullandBear</nombre>
+              <referencia>PB014</referencia>
+              <precio>70.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Calcetines HyM</nombre>
+              <referencia>HM011</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 40 -->
+      <pedido>
+        <nombre>Carlos</nombre>
+        <apellidos>Ruiz Fernández</apellidos>
+        <telefono>987321654</telefono>
+        <direccion>
+          <calle>Calle Mayor, 123</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28012</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>carlos@example.com</correo>
+        <fecha_inclusion>2021-08-16</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>40</numero_pedido>
+          <fecha_compra>2021-11-16</fecha_compra>
+          <fecha_entrega>2021-11-26</fecha_entrega>
+          <total_factura>105.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camisa Mango</nombre>
+              <referencia>MG011</referencia>
+              <precio>85.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pañuelo Zara</nombre>
+              <referencia>ZR013</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+    </trimestre>
+  </anio>
+  
+  <!-- Año 2022 -->
+  <anio año="2022">
+    <!-- Primer Trimestre -->
+    <trimestre numero="1">
+      <!-- Pedido 1 -->
+      <pedido>
+        <nombre>María</nombre>
+        <apellidos>Rodríguez Gómez</apellidos>
+        <telefono>654789321</telefono>
+        <direccion>
+          <calle>Calle Mayor, 456</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08001</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>maria@example.com</correo>
+        <fecha_inclusion>2022-01-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>1</numero_pedido>
+          <fecha_compra>2022-01-10</fecha_compra>
+          <fecha_entrega>2022-01-20</fecha_entrega>
+          <total_factura>120.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta Zara</nombre>
+              <referencia>ZR014</referencia>
+              <precio>90.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pañuelo Mango</nombre>
+              <referencia>MG012</referencia>
+              <precio>30.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 2 -->
+      <pedido>
+        <nombre>David</nombre>
+        <apellidos>Fernández López</apellidos>
+        <telefono>987321654</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28002</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>david@example.com</correo>
+        <fecha_inclusion>2022-01-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>2</numero_pedido>
+          <fecha_compra>2022-01-15</fecha_compra>
+          <fecha_entrega>2022-01-25</fecha_entrega>
+          <total_factura>80.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Sudadera PullandBear</nombre>
+              <referencia>PB015</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda HyM</nombre>
+              <referencia>HM012</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 3 -->
+      <pedido>
+        <nombre>Sara</nombre>
+        <apellidos>González Martínez</apellidos>
+        <telefono>321987654</telefono>
+        <direccion>
+          <calle>Calle Granada, 456</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18006</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>sara@example.com</correo>
+        <fecha_inclusion>2022-01-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>3</numero_pedido>
+          <fecha_compra>2022-01-20</fecha_compra>
+          <fecha_entrega>2022-01-30</fecha_entrega>
+          <total_factura>100.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Zapatos Mango</nombre>
+              <referencia>MG013</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorro PullandBear</nombre>
+              <referencia>PB016</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 4 -->
+      <pedido>
+        <nombre>Javier</nombre>
+        <apellidos>Ruiz Fernández</apellidos>
+        <telefono>654987321</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08003</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>javier@example.com</correo>
+        <fecha_inclusion>2022-01-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>4</numero_pedido>
+          <fecha_compra>2022-01-25</fecha_compra>
+          <fecha_entrega>2022-02-04</fecha_entrega>
+          <total_factura>90.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Jersey Zara</nombre>
+              <referencia>ZR015</referencia>
+              <precio>70.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Calcetines HyM</nombre>
+              <referencia>HM013</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 5 -->
+      <pedido>
+        <nombre>Lucía</nombre>
+        <apellidos>García Pérez</apellidos>
+        <telefono>123456789</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 123</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41001</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>lucia@example.com</correo>
+        <fecha_inclusion>2022-01-25</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>5</numero_pedido>
+          <fecha_compra>2022-01-30</fecha_compra>
+          <fecha_entrega>2022-02-09</fecha_entrega>
+          <total_factura>110.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camisa Mango</nombre>
+              <referencia>MG014</referencia>
+              <precio>90.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda Zara</nombre>
+              <referencia>ZR016</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 6 -->
+      <pedido>
+        <nombre>Carlos</nombre>
+        <apellidos>Rodríguez Sánchez</apellidos>
+        <telefono>987654321</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 456</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28004</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>carlos@example.com</correo>
+        <fecha_inclusion>2022-01-30</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>6</numero_pedido>
+          <fecha_compra>2022-02-05</fecha_compra>
+          <fecha_entrega>2022-02-15</fecha_entrega>
+          <total_factura>95.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Pantalón Zara</nombre>
+              <referencia>ZR017</referencia>
+              <precio>75.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Corbata HyM</nombre>
+              <referencia>HM014</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 7 -->
+      <pedido>
+        <nombre>Elena</nombre>
+        <apellidos>Fernández Gómez</apellidos>
+        <telefono>654321987</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08005</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>elena@example.com</correo>
+        <fecha_inclusion>2022-02-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>7</numero_pedido>
+          <fecha_compra>2022-02-10</fecha_compra>
+          <fecha_entrega>2022-02-20</fecha_entrega>
+          <total_factura>85.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Zapatillas Mango</nombre>
+              <referencia>MG015</referencia>
+              <precio>65.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorro PullandBear</nombre>
+              <referencia>PB017</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 8 -->
+      <pedido>
+        <nombre>Andrea</nombre>
+        <apellidos>Gómez Martínez</apellidos>
+        <telefono>321654987</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 456</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41002</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>andrea@example.com</correo>
+        <fecha_inclusion>2022-02-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>8</numero_pedido>
+          <fecha_compra>2022-02-15</fecha_compra>
+          <fecha_entrega>2022-02-25</fecha_entrega>
+          <total_factura>130.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Abrigo Zara</nombre>
+              <referencia>ZR018</referencia>
+              <precio>110.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Guantes HyM</nombre>
+              <referencia>HM015</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 9 -->
+      <pedido>
+        <nombre>Pablo</nombre>
+        <apellidos>Sanchez Gómez</apellidos>
+        <telefono>987654123</telefono>
+        <direccion>
+          <calle>Calle Granada, 789</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18007</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>pablo@example.com</correo>
+        <fecha_inclusion>2022-02-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>9</numero_pedido>
+          <fecha_compra>2022-02-20</fecha_compra>
+          <fecha_entrega>2022-03-02</fecha_entrega>
+          <total_factura>95.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Sudadera Mango</nombre>
+              <referencia>MG016</referencia>
+              <precio>75.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda PullandBear</nombre>
+              <referencia>PB018</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 10 -->
+      <pedido>
+        <nombre>Laura</nombre>
+        <apellidos>García López</apellidos>
+        <telefono>456789123</telefono>
+        <direccion>
+          <calle>Calle Mayor, 456</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08006</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>laura@example.com</correo>
+        <fecha_inclusion>2022-02-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>10</numero_pedido>
+          <fecha_compra>2022-02-25</fecha_compra>
+          <fecha_entrega>2022-03-07</fecha_entrega>
+          <total_factura>110.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Zapatos PullandBear</nombre>
+              <referencia>PB019</referencia>
+              <precio>90.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Corbata Zara</nombre>
+              <referencia>ZR019</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+    </trimestre>
+
+    <!-- Segundo Trimestre -->
+    <trimestre numero="2">
+      <!-- Pedido 1 -->
+      <pedido>
+        <nombre>Marta</nombre>
+        <apellidos>González Martínez</apellidos>
+        <telefono>654123789</telefono>
+        <direccion>
+          <calle>Calle Mayor, 456</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28003</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>marta@example.com</correo>
+        <fecha_inclusion>2022-04-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>1</numero_pedido>
+          <fecha_compra>2022-04-10</fecha_compra>
+          <fecha_entrega>2022-04-20</fecha_entrega>
+          <total_factura>150.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camisa Mango</nombre>
+              <referencia>MG020</referencia>
+              <precio>100.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pantalón Zara</nombre>
+              <referencia>ZR020</referencia>
+              <precio>50.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 2 -->
+      <pedido>
+        <nombre>Luis</nombre>
+        <apellidos>Rodríguez Sánchez</apellidos>
+        <telefono>987789456</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 789</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08007</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>luis@example.com</correo>
+        <fecha_inclusion>2022-04-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>2</numero_pedido>
+          <fecha_compra>2022-04-15</fecha_compra>
+          <fecha_entrega>2022-04-25</fecha_entrega>
+          <total_factura>80.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Sudadera PullandBear</nombre>
+              <referencia>PB020</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda HyM</nombre>
+              <referencia>HM016</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 3 -->
+      <pedido>
+        <nombre>Ana</nombre>
+        <apellidos>Gómez Martín</apellidos>
+        <telefono>321654987</telefono>
+        <direccion>
+          <calle>Calle Granada, 456</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18008</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>ana@example.com</correo>
+        <fecha_inclusion>2022-04-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>3</numero_pedido>
+          <fecha_compra>2022-04-20</fecha_compra>
+          <fecha_entrega>2022-04-30</fecha_entrega>
+          <total_factura>100.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Zapatos Mango</nombre>
+              <referencia>MG021</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorro PullandBear</nombre>
+              <referencia>PB021</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 4 -->
+      <pedido>
+        <nombre>Mario</nombre>
+        <apellidos>García Pérez</apellidos>
+        <telefono>123789456</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28004</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>mario@example.com</correo>
+        <fecha_inclusion>2022-04-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>4</numero_pedido>
+          <fecha_compra>2022-04-25</fecha_compra>
+          <fecha_entrega>2022-05-05</fecha_entrega>
+          <total_factura>120.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Jersey HyM</nombre>
+              <referencia>HM017</referencia>
+              <precio>90.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda Zara</nombre>
+              <referencia>ZR021</referencia>
+              <precio>30.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 5 -->
+      <pedido>
+        <nombre>Elena</nombre>
+        <apellidos>Sanchez López</apellidos>
+        <telefono>789456123</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 123</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41003</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>elena@example.com</correo>
+        <fecha_inclusion>2022-04-25</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>5</numero_pedido>
+          <fecha_compra>2022-04-30</fecha_compra>
+          <fecha_entrega>2022-05-10</fecha_entrega>
+          <total_factura>70.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta Zara</nombre>
+              <referencia>ZR022</referencia>
+              <precio>50.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Calcetines HyM</nombre>
+              <referencia>HM018</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 6 -->
+      <pedido>
+        <nombre>Andrés</nombre>
+        <apellidos>González Martínez</apellidos>
+        <telefono>654123789</telefono>
+        <direccion>
+          <calle>Calle Mayor, 456</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28005</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>andres@example.com</correo>
+        <fecha_inclusion>2022-05-01</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>6</numero_pedido>
+          <fecha_compra>2022-05-05</fecha_compra>
+          <fecha_entrega>2022-05-15</fecha_entrega>
+          <total_factura>90.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Pantalón PullandBear</nombre>
+              <referencia>PB022</referencia>
+              <precio>70.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Corbata HyM</nombre>
+              <referencia>HM019</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 7 -->
+      <pedido>
+        <nombre>Julia</nombre>
+        <apellidos>Rodríguez Gómez</apellidos>
+        <telefono>987789456</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 789</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08008</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>julia@example.com</correo>
+        <fecha_inclusion>2022-05-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>7</numero_pedido>
+          <fecha_compra>2022-05-10</fecha_compra>
+          <fecha_entrega>2022-05-20</fecha_entrega>
+          <total_factura>85.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Abrigo Mango</nombre>
+              <referencia>MG022</referencia>
+              <precio>65.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Guantes PullandBear</nombre>
+              <referencia>PB023</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 8 -->
+      <pedido>
+        <nombre>Diego</nombre>
+        <apellidos>Fernández López</apellidos>
+        <telefono>321654987</telefono>
+        <direccion>
+          <calle>Calle Granada, 456</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18009</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>diego@example.com</correo>
+        <fecha_inclusion>2022-05-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>8</numero_pedido>
+          <fecha_compra>2022-05-15</fecha_compra>
+          <fecha_entrega>2022-05-25</fecha_entrega>
+          <total_factura>110.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Jersey Zara</nombre>
+              <referencia>ZR023</referencia>
+              <precio>90.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda Mango</nombre>
+              <referencia>MG023</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 9 -->
+      <pedido>
+        <nombre>Lorena</nombre>
+        <apellidos>Martínez García</apellidos>
+        <telefono>123789456</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28006</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>lorena@example.com</correo>
+        <fecha_inclusion>2022-05-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>9</numero_pedido>
+          <fecha_compra>2022-05-20</fecha_compra>
+          <fecha_entrega>2022-05-30</fecha_entrega>
+          <total_factura>75.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camisa PullandBear</nombre>
+              <referencia>PB024</referencia>
+              <precio>55.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pañuelo Zara</nombre>
+              <referencia>ZR024</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 10 -->
+      <pedido>
+        <nombre>Carlos</nombre>
+        <apellidos>Gómez Sánchez</apellidos>
+        <telefono>789456123</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 123</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41004</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>carlos@example.com</correo>
+        <fecha_inclusion>2022-05-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>10</numero_pedido>
+          <fecha_compra>2022-05-25</fecha_compra>
+          <fecha_entrega>2022-06-05</fecha_entrega>
+          <total_factura>100.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Pantalón HyM</nombre>
+              <referencia>HM020</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorra PullandBear</nombre>
+              <referencia>PB025</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+    </trimestre>
+
+    <!-- Tercer Trimestre -->
+    <trimestre numero="3">
+      <!-- Pedido 1 -->
+      <pedido>
+        <nombre>Laura</nombre>
+        <apellidos>Fernández Gutiérrez</apellidos>
+        <telefono>654987321</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28007</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>laura@example.com</correo>
+        <fecha_inclusion>2022-07-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>11</numero_pedido>
+          <fecha_compra>2022-07-10</fecha_compra>
+          <fecha_entrega>2022-07-20</fecha_entrega>
+          <total_factura>120.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Sudadera HyM</nombre>
+              <referencia>HM021</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pañuelo Mango</nombre>
+              <referencia>MG024</referencia>
+              <precio>40.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 2 -->
+      <pedido>
+        <nombre>Roberto</nombre>
+        <apellidos>Ruiz Martínez</apellidos>
+        <telefono>987654321</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 456</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08009</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>roberto@example.com</correo>
+        <fecha_inclusion>2022-07-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>12</numero_pedido>
+          <fecha_compra>2022-07-15</fecha_compra>
+          <fecha_entrega>2022-07-25</fecha_entrega>
+          <total_factura>90.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta Mango</nombre>
+              <referencia>MG025</referencia>
+              <precio>70.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda PullandBear</nombre>
+              <referencia>PB026</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 3 -->
+      <pedido>
+        <nombre>Carmen</nombre>
+        <apellidos>López Sánchez</apellidos>
+        <telefono>789321654</telefono>
+        <direccion>
+          <calle>Calle Granada, 123</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18010</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>carmen@example.com</correo>
+        <fecha_inclusion>2022-07-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>13</numero_pedido>
+          <fecha_compra>2022-07-20</fecha_compra>
+          <fecha_entrega>2022-07-30</fecha_entrega>
+          <total_factura>140.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Chaqueta Zara</nombre>
+              <referencia>ZR025</referencia>
+              <precio>100.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorro PullandBear</nombre>
+              <referencia>PB027</referencia>
+              <precio>40.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 4 -->
+      <pedido>
+        <nombre>Javier</nombre>
+        <apellidos>Martínez Gómez</apellidos>
+        <telefono>321789654</telefono>
+        <direccion>
+          <calle>Calle Mayor, 123</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28008</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>javier@example.com</correo>
+        <fecha_inclusion>2022-07-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>14</numero_pedido>
+          <fecha_compra>2022-07-25</fecha_compra>
+          <fecha_entrega>2022-08-05</fecha_entrega>
+          <total_factura>80.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camisa PullandBear</nombre>
+              <referencia>PB028</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gafas de sol HyM</nombre>
+              <referencia>HM022</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 5 -->
+      <pedido>
+        <nombre>María</nombre>
+        <apellidos>García Rodríguez</apellidos>
+        <telefono>987321654</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 456</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41005</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>maria@example.com</correo>
+        <fecha_inclusion>2022-07-25</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>15</numero_pedido>
+          <fecha_compra>2022-07-30</fecha_compra>
+          <fecha_entrega>2022-08-10</fecha_entrega>
+          <total_factura>100.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Pantalón Mango</nombre>
+              <referencia>MG026</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Sombrero PullandBear</nombre>
+              <referencia>PB029</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 6 -->
+      <pedido>
+        <nombre>Manuel</nombre>
+        <apellidos>Ramírez López</apellidos>
+        <telefono>789654123</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 789</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08010</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>manuel@example.com</correo>
+        <fecha_inclusion>2022-08-01</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>16</numero_pedido>
+          <fecha_compra>2022-08-05</fecha_compra>
+          <fecha_entrega>2022-08-15</fecha_entrega>
+          <total_factura>95.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Chaqueta HyM</nombre>
+              <referencia>HM023</referencia>
+              <precio>70.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda Zara</nombre>
+              <referencia>ZR026</referencia>
+              <precio>25.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 7 -->
+      <pedido>
+        <nombre>Sara</nombre>
+        <apellidos>Fernández Rodríguez</apellidos>
+        <telefono>456987321</telefono>
+        <direccion>
+          <calle>Calle Mayor, 456</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28009</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>sara@example.com</correo>
+        <fecha_inclusion>2022-08-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>17</numero_pedido>
+          <fecha_compra>2022-08-10</fecha_compra>
+          <fecha_entrega>2022-08-20</fecha_entrega>
+          <total_factura>85.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Jersey PullandBear</nombre>
+              <referencia>PB030</referencia>
+              <precio>65.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorra HyM</nombre>
+              <referencia>HM024</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 8 -->
+      <pedido>
+        <nombre>Marta</nombre>
+        <apellidos>López Martínez</apellidos>
+        <telefono>789654321</telefono>
+        <direccion>
+          <calle>Calle Granada, 789</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18011</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>marta@example.com</correo>
+        <fecha_inclusion>2022-08-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>18</numero_pedido>
+          <fecha_compra>2022-08-15</fecha_compra>
+          <fecha_entrega>2022-08-25</fecha_entrega>
+          <total_factura>110.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camisa Mango</nombre>
+              <referencia>MG027</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda PullandBear</nombre>
+              <referencia>PB031</referencia>
+              <precio>30.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 9 -->
+      <pedido>
+        <nombre>Diego</nombre>
+        <apellidos>Gómez Rodríguez</apellidos>
+        <telefono>321456987</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 789</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41006</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>diego@example.com</correo>
+        <fecha_inclusion>2022-08-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>19</numero_pedido>
+          <fecha_compra>2022-08-20</fecha_compra>
+          <fecha_entrega>2022-08-30</fecha_entrega>
+          <total_factura>75.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Pantalón Zara</nombre>
+              <referencia>ZR027</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorra Mango</nombre>
+              <referencia>MG028</referencia>
+              <precio>15.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 10 -->
+      <pedido>
+        <nombre>Lucía</nombre>
+        <apellidos>García Sánchez</apellidos>
+        <telefono>987456321</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28010</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>lucia@example.com</correo>
+        <fecha_inclusion>2022-08-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>20</numero_pedido>
+          <fecha_compra>2022-08-25</fecha_compra>
+          <fecha_entrega>2022-09-05</fecha_entrega>
+          <total_factura>95.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Sudadera PullandBear</nombre>
+              <referencia>PB032</referencia>
+              <precio>75.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pañuelo HyM</nombre>
+              <referencia>HM025</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+    </trimestre>
+
+    <!-- Cuarto Trimestre -->
+    <trimestre numero="4">
+      <!-- Pedido 1 -->
+      <pedido>
+        <nombre>Marta</nombre>
+        <apellidos>López Martínez</apellidos>
+        <telefono>789654321</telefono>
+        <direccion>
+          <calle>Calle Granada, 789</calle>
+          <ciudad>Granada</ciudad>
+          <codigo_postal>18011</codigo_postal>
+          <provincia>Granada</provincia>
+        </direccion>
+        <correo>marta@example.com</correo>
+        <fecha_inclusion>2022-10-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>21</numero_pedido>
+          <fecha_compra>2022-10-10</fecha_compra>
+          <fecha_entrega>2022-10-20</fecha_entrega>
+          <total_factura>110.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camisa Mango</nombre>
+              <referencia>MG029</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda PullandBear</nombre>
+              <referencia>PB033</referencia>
+              <precio>30.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 2 -->
+      <pedido>
+        <nombre>Diego</nombre>
+        <apellidos>Gómez Rodríguez</apellidos>
+        <telefono>321456987</telefono>
+        <direccion>
+          <calle>Calle Sevilla, 789</calle>
+          <ciudad>Sevilla</ciudad>
+          <codigo_postal>41006</codigo_postal>
+          <provincia>Sevilla</provincia>
+        </direccion>
+        <correo>diego@example.com</correo>
+        <fecha_inclusion>2022-10-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>22</numero_pedido>
+          <fecha_compra>2022-10-15</fecha_compra>
+          <fecha_entrega>2022-10-25</fecha_entrega>
+          <total_factura>75.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Pantalón Zara</nombre>
+              <referencia>ZR028</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorra Mango</nombre>
+              <referencia>MG030</referencia>
+              <precio>15.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 3 -->
+      <pedido>
+        <nombre>Lucía</nombre>
+        <apellidos>García Sánchez</apellidos>
+        <telefono>987456321</telefono>
+        <direccion>
+          <calle>Calle Mayor, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28010</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>lucia@example.com</correo>
+        <fecha_inclusion>2022-10-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>23</numero_pedido>
+          <fecha_compra>2022-10-20</fecha_compra>
+          <fecha_entrega>2022-10-30</fecha_entrega>
+          <total_factura>95.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Sudadera PullandBear</nombre>
+              <referencia>PB034</referencia>
+              <precio>75.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Pañuelo HyM</nombre>
+              <referencia>HM026</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 4 -->
+      <pedido>
+        <nombre>Carlos</nombre>
+        <apellidos>Martínez García</apellidos>
+        <telefono>654123789</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 456</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08020</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>carlos@example.com</correo>
+        <fecha_inclusion>2022-10-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>24</numero_pedido>
+          <fecha_compra>2022-10-25</fecha_compra>
+          <fecha_entrega>2022-11-05</fecha_entrega>
+          <total_factura>120.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Chaqueta Zara</nombre>
+              <referencia>ZR029</referencia>
+              <precio>90.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorra PullandBear</nombre>
+              <referencia>PB035</referencia>
+              <precio>30.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 5 -->
+      <pedido>
+        <nombre>Ana</nombre>
+        <apellidos>Gómez Martínez</apellidos>
+        <telefono>147258369</telefono>
+        <direccion>
+          <calle>Calle Mayor, 123</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28005</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>ana@example.com</correo>
+        <fecha_inclusion>2022-10-25</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>25</numero_pedido>
+          <fecha_compra>2022-10-30</fecha_compra>
+          <fecha_entrega>2022-11-10</fecha_entrega>
+          <total_factura>85.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Jersey Mango</nombre>
+              <referencia>MG031</referencia>
+              <precio>65.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gafas de sol HyM</nombre>
+              <referencia>HM027</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 6 -->
+      <pedido>
+        <nombre>Javier</nombre>
+        <apellidos>González Rodríguez</apellidos>
+        <telefono>369852147</telefono>
+        <direccion>
+          <calle>Calle Serrano, 456</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28006</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>javier@example.com</correo>
+        <fecha_inclusion>2022-10-30</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>26</numero_pedido>
+          <fecha_compra>2022-11-05</fecha_compra>
+          <fecha_entrega>2022-11-15</fecha_entrega>
+          <total_factura>105.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta PullandBear</nombre>
+              <referencia>PB036</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda Zara</nombre>
+              <referencia>ZR030</referencia>
+              <precio>25.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 7 -->
+      <pedido>
+        <nombre>Elena</nombre>
+        <apellidos>Sanchez López</apellidos>
+        <telefono>258369147</telefono>
+        <direccion>
+          <calle>Calle Alcalá, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28007</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>elena@example.com</correo>
+        <fecha_inclusion>2022-11-05</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>27</numero_pedido>
+          <fecha_compra>2022-11-10</fecha_compra>
+          <fecha_entrega>2022-11-20</fecha_entrega>
+          <total_factura>90.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camisa HyM</nombre>
+              <referencia>HM028</referencia>
+              <precio>70.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorra PullandBear</nombre>
+              <referencia>PB037</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 8 -->
+      <pedido>
+        <nombre>Sara</nombre>
+        <apellidos>Ruiz García</apellidos>
+        <telefono>369147258</telefono>
+        <direccion>
+          <calle>Calle Mayor, 456</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08030</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>sara@example.com</correo>
+        <fecha_inclusion>2022-11-10</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>28</numero_pedido>
+          <fecha_compra>2022-11-15</fecha_compra>
+          <fecha_entrega>2022-11-25</fecha_entrega>
+          <total_factura>80.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Pantalón Zara</nombre>
+              <referencia>ZR031</referencia>
+              <precio>60.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda Mango</nombre>
+              <referencia>MG032</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 9 -->
+      <pedido>
+        <nombre>Adrián</nombre>
+        <apellidos>López Sánchez</apellidos>
+        <telefono>852369147</telefono>
+        <direccion>
+          <calle>Calle Gran Vía, 123</calle>
+          <ciudad>Barcelona</ciudad>
+          <codigo_postal>08040</codigo_postal>
+          <provincia>Barcelona</provincia>
+        </direccion>
+        <correo>adrian@example.com</correo>
+        <fecha_inclusion>2022-11-15</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>29</numero_pedido>
+          <fecha_compra>2022-11-20</fecha_compra>
+          <fecha_entrega>2022-11-30</fecha_entrega>
+          <total_factura>70.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Jersey PullandBear</nombre>
+              <referencia>PB038</referencia>
+              <precio>50.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Gorra Zara</nombre>
+              <referencia>ZR032</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+      
+      <!-- Pedido 10 -->
+      <pedido>
+        <nombre>Laura</nombre>
+        <apellidos>Fernández Martínez</apellidos>
+        <telefono>147852369</telefono>
+        <direccion>
+          <calle>Calle Serrano, 789</calle>
+          <ciudad>Madrid</ciudad>
+          <codigo_postal>28008</codigo_postal>
+          <provincia>Madrid</provincia>
+        </direccion>
+        <correo>laura@example.com</correo>
+        <fecha_inclusion>2022-11-20</fecha_inclusion>
+        <pedido_detalle>
+          <numero_pedido>30</numero_pedido>
+          <fecha_compra>2022-11-25</fecha_compra>
+          <fecha_entrega>2022-12-05</fecha_entrega>
+          <total_factura>100.00</total_factura>
+          <productos>
+            <producto>
+              <nombre>Camiseta HyM</nombre>
+              <referencia>HM029</referencia>
+              <precio>80.00</precio>
+              <unidades>1</unidades>
+            </producto>
+            <producto>
+              <nombre>Bufanda PullandBear</nombre>
+              <referencia>PB039</referencia>
+              <precio>20.00</precio>
+              <unidades>1</unidades>
+            </producto>
+          </productos>
+        </pedido_detalle>
+      </pedido>
+    </trimestre>
+  </anio>
+</pedidos>
